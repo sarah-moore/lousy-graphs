@@ -62,3 +62,16 @@ Attendance in class is mandatory. The participation grade will be dependent on p
 | Week 6-7    | Description and Interpretation | 
 | Week 8      | Putting things Together: Visualization Narratives for Broad Audiences| 
 | Week 9-10  | Constructive Peer Review, Editorial Process, and Pitching Ideas| 
+
+## Assigment Due Dates 
+
+| Date | Assignment | 
+| ----------- | ----------- |
+|09/26/2022   | Initial Site Build | 
+|10/03/2022   | Week 2 Visualization Dump| 
+|10/17/2022   | Short Form Blog 1 | 
+|10/24/2022   | Week 5 Visualization Dump | 
+|11/7/2022    | Short Form Blog 2 | 
+|11/14/2022   | Week 8 Visualization Dump | 
+|11/27/2022   | Short Form Blog 3| 
+|10/10/2022   | Final Blog Compilation | 
