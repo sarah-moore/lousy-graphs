@@ -32,14 +32,19 @@ The deliverables of the course will all be subject to peer review and constructi
 
 ## Assignments 
 
-**Build a Blog—Process (60%)** 
+**Build a Blog—Process (60% total)** 
 Over the course of the quarter, students will be required to build a GitHub site or Substack blog—the privacy of which is up to the student, so long as it is available to the class. The build of this site will be phased through the quarter. Students are highly encouraged to read how to make these sites accessible to individuals with different abilities. 
-1)	Site build and accessibility- 15% 
-2) Weekly Visualization Dump- 15% 
-Each week submit 3 data visualizations: 1 that you love, 1 that you hate, 1 of your own. Include the visualization’s context, an evaluation, and citation of each of these visualizations or the data source. Each week will focus on a specific theme, designated in the week preceding the post by the instructor. These themes will focus on both a current event as well as a specific element of data visualization.
+
+1)	Intial site build and accessibility- 15% 
+
+3) Weekly Visualization Dump- 15% 
+
+Throughout the quarter you will have some opportunities to submit a visualization blog of the week. Each visualization blog will contain 3 data visualizations: 1 that you love, 1 that you hate, 1 of your own. Include the visualization’s context, an evaluation, and citation of each of these visualizations or the data source. Each blog week will focus on a specific theme, designated in the week preceding the post by the instructor. These themes will focus on both a current event as well as a specific element of data visualization.
+
 3) 3 Short Form Blogs with relevant, original data visualizations (~1,200 words)- 30%
 
-**Build a Blog—Completion (20%)**
+5) Build a Blog Completion - 20% 
+
 At the end of the quarter, you will redesign, edit, and proofread all previous blog submissions based on your peer and instructor review, as necessary. As a final addition, you will also be required to translate a piece of already published political science work into a public-facing piece. This will be specifically interesting if you are able to nest it in historical news headlines—as if it were written when the headlines were relevant. 
 
 **Participation (20%)**  
