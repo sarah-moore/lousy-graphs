@@ -51,7 +51,7 @@ At the end of the quarter, you will redesign, edit, and proofread all previous b
 Attendance in class is mandatory. The participation grade will be dependent on participation in class AND peer-review of other students’ materials. Over the quarter, you will have a class peer that will be your peer-reviewer for all submitted assignments, except for the weekly visualization dumps. The participation grade will reflect your satisfactory completion of peer-review tasks. 
 
 
-For information about course and university policy, see [the documentation here](/course_policies.md)
+For information about course and university policy related to academic integrity, COVID-19 expectations, and accommodations for disabilities see [the documentation here](/course_policies.md)
 --------
 
 ## Draft Course Schedule 
