@@ -39,7 +39,7 @@ Over the course of the quarter, students will be required to build a GitHub site
 
 3) Visualization Dump- 15% 
 
-Throughout the quarter you will have 3 opportunities to submit a visualization blog of the week. Each visualization blog will contain 3 data visualizations: 1 that you love, 1 that you hate, 1 of your own. Include the visualization’s context, an evaluation, and citation of each of these visualizations or the data source. Each blog week will focus on a specific theme, designated in the week preceding the post by the instructor. These themes will focus on both a current event as well as a specific element of data visualization. 
+        Throughout the quarter you will have 3 opportunities to submit a visualization blog of the week. Each visualization blog will contain 3 data visualizations: 1 that you love, 1 that you hate, 1 of your own. Include the visualization’s context, an evaluation, and citation of each of these visualizations or the data source. Each blog week will focus on a specific theme, designated in the week preceding the post by the instructor. These themes will focus on both a current event as well as a specific element of data visualization. 
 
 3) 3 Short Form Blogs with relevant, original data visualizations (~1,200 words)- 30%
 
