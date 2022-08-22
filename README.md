@@ -35,17 +35,19 @@ The deliverables of the course will all be subject to peer review and constructi
 **Build a Blog—Process (60% total)** 
 Over the course of the quarter, students will be required to build a GitHub site or Substack blog—the privacy of which is up to the student, so long as it is available to the class. The build of this site will be phased through the quarter. Students are highly encouraged to read how to make these sites accessible to individuals with different abilities. 
 
-1) Initial site build and accessibility- 15% 
+1) Initial site build and accessibility- 10% 
 
 3) Visualization Dump- 15% 
 
-Throughout the quarter you will have 3 opportunities to submit a visualization blog of the week. Each visualization blog will contain 3 data visualizations: 1 that you love, 1 that you hate, 1 of your own. Include the visualization’s context, an evaluation, and citation of each of these visualizations or the data source. Each blog week will focus on a specific theme, designated in the week preceding the post by the instructor. These themes will focus on both a current event as well as a specific element of data visualization.
+Throughout the quarter you will have 3 opportunities to submit a visualization blog of the week. Each visualization blog will contain 3 data visualizations: 1 that you love, 1 that you hate, 1 of your own. Include the visualization’s context, an evaluation, and citation of each of these visualizations or the data source. Each blog week will focus on a specific theme, designated in the week preceding the post by the instructor. These themes will focus on both a current event as well as a specific element of data visualization. 
 
 3) 3 Short Form Blogs with relevant, original data visualizations (~1,200 words)- 30%
 
-5) Build a Blog Completion - 20% 
+5) Final Blog Compilation - 25%  
 
-At the end of the quarter, you will redesign, edit, and proofread all previous blog submissions based on your peer and instructor review, as necessary. As a final addition, you will also be required to translate a piece of already published political science work into a public-facing piece. This will be specifically interesting if you are able to nest it in historical news headlines—as if it were written when the headlines were relevant. 
+  a. _Edit & Redesign_ (10%): At the end of the quarter, you will redesign, edit, and proofread all previous blog submissions based on your peer and instructor review, as necessary.
+  
+  b. _Academic Translation_ (15%): As a final addition, you will also be required to translate a piece of already published political science work into a public-facing piece. This will be specifically interesting if you are able to nest it in historical news headlines—as if it were written when the headlines were relevant. 15 % 
 
 **Participation (20%)**  
 Attendance in class is mandatory. The participation grade will be dependent on participation in class AND peer-review of other students’ materials. Over the quarter, you will have a class peer that will be your peer-reviewer for all submitted assignments, except for the weekly visualization dumps. The participation grade will reflect your satisfactory completion of peer-review tasks. 
@@ -63,6 +65,20 @@ For information about course and university policy related to academic integrity
 | Week 6-7    | Description and Interpretation | 
 | Week 8      | Putting things Together: Visualization Narratives for Broad Audiences| 
 | Week 9-10  | Constructive Peer Review, Editorial Process, and Pitching Ideas| 
+
+## Assignment Grading 
+
+[Site Build](/sitebuild.md)
+
+[Visualization Dump](/viz_dump.md)
+
+[Short Form Blogs](/short_blogs.md)
+
+[Blog Compilation](/blog_compilation.md) 
+
+[Peer Review Expectations](/peer_review.md)
+
+[Class Participation](/participation.md) 
 
 ## Assigment Due Dates 
 
