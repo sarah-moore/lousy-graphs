@@ -33,6 +33,7 @@ The deliverables of the course will all be subject to peer review and constructi
 ## Assignments 
 
 **Build a Blog—Process (60% total)** 
+
 Over the course of the quarter, students will be required to build a GitHub site or Substack blog—the privacy of which is up to the student, so long as it is available to the class. The build of this site will be phased through the quarter. Students are highly encouraged to read how to make these sites accessible to individuals with different abilities. 
 
 1) Initial site build and accessibility- 10% 
