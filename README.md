@@ -34,7 +34,7 @@ The deliverables of the course will all be subject to peer review and constructi
 
 ## Assignments 
 
-**Build a Blog—Process (60% total)** 
+**Build a Blog—Process (80%)** 
 
 Over the course of the quarter, students will be required to build a GitHub site or Substack blog—the privacy of which is up to the student, so long as it is available to the class. The build of this site will be phased through the quarter. Students are highly encouraged to read how to make these sites accessible to individuals with different abilities. 
 
@@ -46,11 +46,11 @@ Throughout the quarter you will have 3 opportunities to submit a visualization b
 
 4) 3 Short Form Blogs with relevant, original data visualizations (~1,200 words)- 30%
 
-5) Final Blog Compilation - 25%  
+5) Final Blog Compilation 
     
     a. _Edit & Redesign_ (10%): At the end of the quarter, you will redesign, edit, and proofread all previous blog submissions based on your peer and instructor review, as necessary.
   
-    b. _Academic Translation_ (15%): As a final addition, you will also be required to translate a piece of already published political science work into a public-facing piece. This will be specifically interesting if you are able to nest it in historical news headlines—as if it were written when the headlines were relevant. 15 % 
+    b. _Academic Translation_ (15%): As a final addition, you will also be required to translate a piece of already published political science work into a public-facing piece. This will be specifically interesting if you are able to nest it in historical news headlines—as if it were written when the headlines were relevant.
 
 **Participation (20%)**  
 Attendance in class is mandatory. The participation grade will be dependent on participation in class AND peer-review of other students’ materials. Over the quarter, you will have a class peer that will be your peer-reviewer for all submitted assignments, except for the weekly visualization dumps. The participation grade will reflect your satisfactory completion of peer-review tasks. 
