@@ -19,7 +19,7 @@ Thursday, 9/22:
 
 ## Week 2: 9/26-9/30 
 
-** Site Build Due 9/26 at 12:59 ** 
+**Site Build Due 9/26 at 12:59** 
 
 Tuesday, 9/27: 
 
@@ -33,7 +33,7 @@ Thursday 9/29: Lab Session
 
 ## Week 3: 10/3-10/7 
 
-** Visualization Dump 1 Due 10/3 at 12:59 ** 
+**Visualization Dump 1 Due 10/3 at 12:59 ** 
 
 Tuesday, 10/4: 
 
@@ -47,7 +47,7 @@ Thursday, 10/13: Lab Session
 
 ## Week 5: 10/17-10/21
 
-** Short Form Blog 1 Due 10/17 at 11:59 **
+**Short Form Blog 1 Due 10/17 at 11:59**
 
 Tuesday, 10/18: 
 
@@ -55,7 +55,7 @@ Thursday, 10/20: Lab Session
 
 ## Week 6: 10/24-10/28
 
-** Visualization Dump 2 Due 10/24 at 12:59 ** 
+**Visualization Dump 2 Due 10/24 at 12:59 ** 
 
 Tuesday, 10/25: 
 
@@ -73,7 +73,7 @@ Thursday, 11/4: Lab Session
 
 ## Week 8: 11/7-11/11
 
-** Short Form Blog 2 Due 11/7 at 11:59 ** 
+**Short Form Blog 2 Due 11/7 at 11:59** 
 
 Tuesday, 11/8: 
 
@@ -81,7 +81,7 @@ Thursday, 11/10: Lab Session
 
 ## Week 9: 11/14-10/18 
 
-** Visualization Dump 3 Due 11/14 at 12:59 ** 
+**Visualization Dump 3 Due 11/14 at 12:59** 
 
 Tuesday, 11/15: 
 
@@ -97,7 +97,7 @@ Thursday, 11/24: **No Class for Thanksgiving Holiday**
 
 ## Reading Week 11/28-12/2
 
-** Short Form Blog 3 Due 11/27 at 11:59 ** 
+**Short Form Blog 3 Due 11/27 at 11:59 ** 
 
 ## Finals Week 12/5-12/9 
 
