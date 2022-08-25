@@ -1,12 +1,20 @@
 # Visualizing Political Data, AKA Sloppy Stats and Lousy Graphs 
 
-POLI SCI 490, Fall 2022 
+## POLI SCI 490, Fall 2022 
 
 Sarah Moore 
 
 How do data savvy experts make quantitative research on political topics readable to the broader public? We’ll focus on ways to accurately capture and convey complex topics while unpacking misleading, uninformative, and otherwise unsatisfactory graphs and statistics. This course will broadly focus on two primary components of meaningful research engagement with headline political topics: data literacy and honest, concise description. Over the quarter, students will be exposed to different theories of data science and visualization paired with applied examples of the portrayal of data in popular media. Particularly, we will hash out the dos and don’ts of writing about political or potentially controversial topics for broad audiences, as well as how to dispel misinformation with your own analyses. Students will then learn how to translate these skills into data-informed, public scholarship of their own. Using reputable public opinion data or broadly accessible political science datasets, students will engage with data journalism and author their own public-facing pieces that are in conversation with relevant political headlines—mindful of maintaining rigor while speaking to a diverse audience. 
 
 An entry level empirical statistics course, such as POLISCI 210 or the statistics department equivalent, are required. Basic familiarity with statistical programming in R is encouraged.
+
+## DROP-IN HOURS 
+
+**Don't email, just show up!**
+
+Mondays 2-4 
+
+Fridays 10-12
 
 --------
 
