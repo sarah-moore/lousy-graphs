@@ -14,8 +14,6 @@ Mondays 2-4
 
 Fridays 10-12
 
--------
-
 ## Course Learning Outcomes 
 
 1)	Applied management of data: 
@@ -33,8 +31,6 @@ Students will be exposed to political science concepts that they must not only u
 4)	Project management and peer review: 
 
 The deliverables of the course will all be subject to peer review and constructive criticism. This will require that students engage thoughtfully in building out their portfolio over time and the design space that they choose. Furthermore, peer review relationship will require that students build rapport with one another to offer substantive comments to classmates regarding their work, building professional skills about how to offer constructive, helpful comments that are within the scope of the writer’s and course’s goals. 
-
---------
 
 ## Assignments 
 
