@@ -1,10 +1,14 @@
 # Weekly Schedule 
 
-## Week 1: 9/20-9/23 
+## <span style= "color:blue"> Week 1: 9/20-9/23 </span> 
 
 ### Tuesday, 9/20: Introduction to Class 
 
 - Introductions and Syllabus 
+
+- Intro to R and other Technology 
+   - Ensure you have downloaded [R](https://cran.r-project.org/) and [RStudio](https://www.rstudio.com/).
+   - Markdown language  
 
 ### Thursday, 9/22: Data Literacy as a Social Good 
 
@@ -38,6 +42,7 @@
 - Lab Session 1: **Bring your computer to class, if possible!** 
 
    - Basic data viz in R, `tidyverse`, and `ggplot2` 
+   
    - Troubleshooting 
 
 ### Thursday 9/29: Basic Data Visualization Theory 
@@ -53,6 +58,7 @@
 - Readings 
 
   - Cleveland and McGill (1982) "[Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods"](https://www.jstor.org/stable/pdf/2288400.pdf)
+  - Streit and Gehlenbord (2014) ["Bar charts and box plots"](https://www.nature.com/articles/nmeth.2807.pdf)
 
 ## Week 3: 10/3-10/7 
 
