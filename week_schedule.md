@@ -38,10 +38,19 @@
 - Lab Session 1: **Bring your computer to class, if possible!** 
 
    - Basic data viz in R, `tidyverse`, and `ggplot2` 
+   - Troubleshooting 
 
-### Thursday 9/29: 
+### Thursday 9/29: Basic Data Visualization Theory 
 
-- Motivating Questions 
+- Motivating Questions: 
+
+   - What is *data visualization* and is this just about graphs? 
+   
+   - What decisions guide the visualization process? 
+   
+   - What are the basic dos and don'ts of data visualization? 
+   
+   - How do we make otherwise complex visualizations accessible to various audiences?
 
 - Readings 
 
