@@ -1,6 +1,6 @@
 # Weekly Schedule 
 
-## <span style= "color:blue"> Week 1: 9/20-9/23 </span> 
+## Week 1: 9/20-9/23
 
 ### Tuesday, 9/20: Introduction to Class 
 
@@ -37,9 +37,9 @@
 
 **Site Build Due 9/26 at 12:59** 
 
-### Tuesday, 9/27: 
+### <span style="color: red;"> Tuesday, 9/27:</span> 
 
-- Lab Session 1: **Bring your computer to class, if possible!** 
+- Lab Session 1: **Bring your computer to class!** 
 
    - Basic data viz in R, `tidyverse`, and `ggplot2` 
    
