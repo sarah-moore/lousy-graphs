@@ -1,10 +1,11 @@
 # Weekly Schedule 
 
-## Week 1: 9/20-9/23 
-
-Tuesday, 9/20: Introduction to Class 
-
-
+|Week                 |Date           |Topic & Readings      | 
+| ------------------  | -----------   |----------------      | 
+<td rowspan=3> Week 1 | Tuesday, 9/20 | Introduction to Class| 
+|                     | Thursday, 9/22| Data Literacy as a Social Good
+                                          - Motivating Questions|
+   
 Thursday, 9/22: Data Literacy as a Social Good 
 
 - Motivating Questions: 
