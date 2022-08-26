@@ -49,8 +49,6 @@
    - What decisions guide the visualization process? 
    
    - What are the basic dos and don'ts of data visualization? 
-   
-   - How do we make otherwise complex visualizations accessible to various audiences?
 
 - Readings 
 
