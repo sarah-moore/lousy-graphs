@@ -9,6 +9,14 @@ Thursday, 9/22: Data Literacy as a Social Good
 
 - Motivating Questions: 
 
+   - What is 'data'? 
+
+   - What types of ethics exist around data and data visualization? 
+  
+   - What does good data literacy provide society? What are the consequences of *poor* data literacy? 
+  
+   - What are *our* responsibilities around data management and data diffusion? 
+
 - Readings: 
 
    - Albert Cairo (2014) ["Ethical Infographics"](https://www.dropbox.com/s/pqgmg02yz0pgju4/EthicalInfographics.pdf)
