@@ -37,7 +37,7 @@
 
 **Site Build Due 9/26 at 12:59** 
 
-### <span style="color: red;"> Tuesday, 9/27:</span> 
+### Tuesday, 9/27  
 
 - Lab Session 1: **Bring your computer to class!** 
 
@@ -45,7 +45,7 @@
    
    - Troubleshooting 
 
-### Thursday 9/29: Basic Data Visualization Theory 
+### Thursday 9/29: Basic Data Visualization Theory  
 
 - Motivating Questions: 
 
@@ -58,19 +58,33 @@
 - Readings 
 
   - Cleveland and McGill (1982) "[Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods"](https://www.jstor.org/stable/pdf/2288400.pdf)
-  - Streit and Gehlenbord (2014) ["Bar charts and box plots"](https://www.nature.com/articles/nmeth.2807.pdf)
+ 
+  - Gelman, Pasarica, Dodhia (2002) ["Let's Practice What We Preach: Turning Tables into Graphs"](https://www.jstor.org/stable/3087382#metadata_info_tab_contents) 
+ 
+   - Schwabish (2014) ["An Economist’s Guide to Visualizing Data"](https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.28.1.209) 
 
 ## Week 3: 10/3-10/7 
 
 **Visualization Dump 1 Due 10/3 at 12:59** 
 
-### Tuesday, 10/4: 
+### Tuesday, 10/4
 
-### Thursday, 10/6: 
+- Lab Session 2: **Bring your computer to class!** 
+   - 
+
+### Thursday, 10/6: Motivating Design Choices 
+
+- Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
+
+- Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges
+"](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
 
 ## Week 4: 10/10-10/14 
 
-### Tuesday, 10/11: 
+### Tuesday, 10/11: Measurement and Scaling 
+
+- Readings
+   - D'Ignazio and Klein (20https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf
 
 ### Thursday, 10/13: Lab Session 
 
@@ -78,9 +92,14 @@
 
 **Short Form Blog 1 Due 10/17 at 11:59**
 
-### Tuesday, 10/18: 
+### Tuesday, 10/18: Visualizing Uncertainty 
 
-### Thursday, 10/20: Lab Session 
+- Readings 
+
+
+### Thursday, 10/20: Lab Session
+
+- 
 
 ## Week 6: 10/24-10/28
 
@@ -88,16 +107,29 @@
 
 ### Tuesday, 10/25: 
 
-### Thursday, 10/27: Lab Session 
-
-## Week 7: 10/31-11/4
-
-### Tuesday, 11/1: Lab Session 
-
 - Readings
   
   - Harrison et al. (2013) ["Influencing Visual Judgment through Affective Priming"](https://dl.acm.org/doi/pdf/10.1145/2470654.2481410)
 
+### Thursday, 10/27: Lab Session 
+
+## Week 7: 10/31-11/4
+
+### Tuesday, 11/1: Managing Political or Contentious Content 
+
+- Motivating Questions: 
+   - How do our design choices influence public attitudes? 
+   - How do we use visualization to avert misinformation? 
+
+- Readings
+
+   - Allen (2021)["The conventions and politics
+of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/14614448211019300) 
+
+   - Lewandowsky et al. (2017)["Beyond Misinformation: Understanding and Coping with the “Post-Truth” Era"](https://reader.elsevier.com/reader/sd/pii/S2211368117300700?token=C8FE1CEFCED4A922A35BF64C3B390DDA4A530CC67261715A30F4E0962EF0E78EE3E00A264312E2F4C31DD311B351880F&originRegion=us-east-1&originCreation=20220826221552) 
+
+   - Mena (2021)["Reducing misperceptions through news stories with data visualization: The role of readers’ prior knowledge and prior beliefs"](https://journals.sagepub.com/doi/pdf/10.1177/14648849211028762) 
+   
 ### Thursday, 11/4: Lab Session 
 
 ## Week 8: 11/7-11/11
