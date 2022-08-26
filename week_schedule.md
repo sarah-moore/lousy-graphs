@@ -2,7 +2,10 @@
 
 ## Week 1: 9/20-9/23 
 
-Tuesday, 9/20: 
+Tuesday, 9/20: Introduction to Class 
+
+
+Thursday, 9/22: Data Literacy as a Social Good 
 
 - Motivating Questions: 
 
@@ -16,8 +19,6 @@ Tuesday, 9/20:
 
    - ["A Code of Ethics for Data Visualization Professionals"](https://rockcontent.com/blog/a-code-of-ethics-for-data-visualization-professionals/)(2012) 
    
-
-Thursday, 9/22: 
 
 ## Week 2: 9/26-9/30 
 
