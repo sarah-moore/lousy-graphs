@@ -14,6 +14,8 @@ Mondays 2-4
 
 Fridays 10-12
 
+## [Schedule](/week_schedule.md)
+
 ## Course Learning Outcomes 
 
 1)	Applied management of data: 
