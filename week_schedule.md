@@ -11,13 +11,13 @@ Thursday, 9/22: Data Literacy as a Social Good
 
 - Readings: 
 
-   - Albert Cairo (2014), ["Ethical Infographics"](https://www.dropbox.com/s/pqgmg02yz0pgju4/EthicalInfographics.pdf) *The IRE Journal*
+   - Albert Cairo (2014) ["Ethical Infographics"](https://www.dropbox.com/s/pqgmg02yz0pgju4/EthicalInfographics.pdf)
    
    - Hasselbalch (2019) ["Making sense of data ethics. The powers behind the data ethics debate in European policymaking"](https://policyreview.info/pdf/policyreview-2019-2-1401.pdf)
   
    - Andrew Beers (2022)["Trust In The Digital Age Requires Data Ethics And A Data Literate Workforce](https://www.forbes.com/sites/tableau/2022/04/14/trust-in-the-digital-age-requires-data-ethics-and-a-data-literate-workforce/?sh=5ba83a3d5437) 
 
-   - ["A Code of Ethics for Data Visualization Professionals"](https://rockcontent.com/blog/a-code-of-ethics-for-data-visualization-professionals/)(2012) 
+   - Matthew Correll (2018) ["Ethical Dimensions of Visualization Research"](https://arxiv.org/pdf/1811.07271.pdf)
    
 
 ## Week 2: 9/26-9/30 
