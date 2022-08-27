@@ -16,7 +16,8 @@
 - Partners will be assigned by the second class session, during which time partners will meet and set an agreed upon means of communication. 
 - Partners should communicate outside of class to document their expectations regarding: 
   - Communication Boundaries 
-  - Expected Work Sharing 
+  - Expected Work Sharing-- How far in advance do you want to share drafts with one another? What is the expected turnaround? 
   - Modification to Criteria 
+  - Assessment of relative strength that may particularly guide commentary (e.g. relative experience in R, desire to work on public writing, etc.)  
 
 ## Peer Assessment Criteria 
