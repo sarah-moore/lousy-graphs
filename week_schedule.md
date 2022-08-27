@@ -6,11 +6,18 @@
 
 - Introductions and Syllabus 
 
+
+### Thursday, 9/22: Lab Session 1 
+
 - Intro to R and other Technology 
    - Ensure you have downloaded [R](https://cran.r-project.org/) and [RStudio](https://www.rstudio.com/).
    - Markdown language  
 
-### Thursday, 9/22: Data Literacy as a Social Good 
+## Week 2: 9/26-9/30 
+
+**Site Build Due 9/26 at 12:59** 
+
+### Tuesday, 9/27: Data Literacy as a Social Good 
 
 - Motivating Questions: 
 
@@ -31,21 +38,17 @@
    - Andrew Beers (2022)["Trust In The Digital Age Requires Data Ethics And A Data Literate Workforce](https://www.forbes.com/sites/tableau/2022/04/14/trust-in-the-digital-age-requires-data-ethics-and-a-data-literate-workforce/?sh=5ba83a3d5437) 
 
    - Matthew Correll (2018) ["Ethical Dimensions of Visualization Research"](https://arxiv.org/pdf/1811.07271.pdf)
-   
+    
+### Thursday 9/29: Lab Session 2
 
-## Week 2: 9/26-9/30 
+- Basic data viz in R, `tidyverse`, and `ggplot2` 
+- Troubleshooting 
 
-**Site Build Due 9/26 at 12:59** 
+ ## Week 3: 10/3-10/7 
 
-### Tuesday, 9/27  
+**Visualization Dump 1 Due 10/3 at 12:59** 
 
-- Lab Session 1: **Bring your computer to class!** 
-
-   - Basic data viz in R, `tidyverse`, and `ggplot2` 
-   
-   - Troubleshooting 
-
-### Thursday 9/29: Basic Data Visualization Theory  
+### Tuesday, 10/4: Basic Data Visualization Theory 
 
 - Motivating Questions: 
 
@@ -63,59 +66,57 @@
  
    - Schwabish (2014) ["An Economist’s Guide to Visualizing Data"](https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.28.1.209) 
 
-## Week 3: 10/3-10/7 
 
-**Visualization Dump 1 Due 10/3 at 12:59** 
+### Thursday, 10/6: Lab Session 3
 
-### Tuesday, 10/4
-
-- Lab Session 2: **Bring your computer to class!** 
-   - 
-
-### Thursday, 10/6: Motivating Design Choices 
-
-- Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
-
-- Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges
-"](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
+- More advanced `ggplot2` and `dplyr` integration 
+   
 
 ## Week 4: 10/10-10/14 
 
-### Tuesday, 10/11: Measurement and Scaling 
+### Tuesday, 10/11: Motivating Further Design Choices 
 
-- Readings
-   - D'Ignazio and Klein (20https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf
+- Readings: 
+   - Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
 
-### Thursday, 10/13: Lab Session 
+   - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges
+"](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
+
+### Thursday, 10/13: Lab Session 4
+
+- Adding detail to plots, multiple plots, and more layers  
 
 ## Week 5: 10/17-10/21
 
 **Short Form Blog 1 Due 10/17 at 11:59**
 
-### Tuesday, 10/18: Visualizing Uncertainty 
+### Tuesday, 10/18: Complexities of Measurement and Scaling 
 
-- Readings 
+- Readings
+   - D'Ignazio and Klein (20https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf
 
 
-### Thursday, 10/20: Lab Session
+### Thursday, 10/20: Lab Session 5 
 
-- 
+- Scaling, coordinates, alternative measurements, and added specifications 
 
 ## Week 6: 10/24-10/28
 
 **Visualization Dump 2 Due 10/24 at 12:59** 
 
-### Tuesday, 10/25: 
+### Tuesday, 10/25: Data Literacy \neq Statistical Literacy 
 
 - Readings
   
   - Harrison et al. (2013) ["Influencing Visual Judgment through Affective Priming"](https://dl.acm.org/doi/pdf/10.1145/2470654.2481410)
 
-### Thursday, 10/27: Lab Session 
+### Thursday, 10/27: Lab Session 6 
+
+- Visualizing Uncertainty 
 
 ## Week 7: 10/31-11/4
 
-### Tuesday, 11/1: Managing Political or Contentious Content 
+### Tuesday, 11/1: Managing Political and Contentious Data  
 
 - Motivating Questions: 
    - How do our design choices influence public attitudes? 
@@ -130,23 +131,32 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
    - Mena (2021)["Reducing misperceptions through news stories with data visualization: The role of readers’ prior knowledge and prior beliefs"](https://journals.sagepub.com/doi/pdf/10.1177/14648849211028762) 
    
-### Thursday, 11/4: Lab Session 
+### Thursday, 11/4: Lab Session 7 
+
+- Survey data, maps, and demography 
 
 ## Week 8: 11/7-11/11
 
 **Short Form Blog 2 Due 11/7 at 11:59** 
 
-### Tuesday, 11/8: 
+### Tuesday, 11/8: Nesting Visualizations in Larger Texts 
 
-### Thursday, 11/10: Lab Session 
+### Thursday, 11/10: Lab Session 8 
+
+- Visualizing qualitative data 
 
 ## Week 9: 11/14-10/18 
 
 **Visualization Dump 3 Due 11/14 at 12:59** 
 
-### Tuesday, 11/15: 
+### Tuesday, 11/15: Big Data, Missing Data, and Other Miscellaneous Problems 
 
-### Thursday, 11/17: Lab Session 
+- Readings:
+
+
+### Thursday, 11/17: Lab Session 9 
+
+- Interactive visualizations 
 
 ## Week 10: 11/21-11/24
 
