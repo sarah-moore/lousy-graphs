@@ -11,7 +11,7 @@
 
 - Intro to R and other Technology 
    - Ensure you have downloaded [R](https://cran.r-project.org/) and [RStudio](https://www.rstudio.com/).
-   - Markdown language  
+- Markdown language  
 
 ## Week 2: 9/26-9/30 
 
@@ -76,11 +76,14 @@
 
 ### Tuesday, 10/11: Motivating Further Design Choices 
 
+- Motivating Questions: 
+   - How do we increase the readibility of visualizations? 
+   - 
+
 - Readings: 
    - Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
 
-   - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges
-"](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
+   - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
 
 ### Thursday, 10/13: Lab Session 4
 
@@ -91,6 +94,10 @@
 **Short Form Blog 1 Due 10/17 at 11:59**
 
 ### Tuesday, 10/18: Complexities of Measurement and Scaling 
+
+- Motivating Questions: 
+
+   - 
 
 - Readings
    - D'Ignazio and Klein (20https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf
@@ -106,13 +113,18 @@
 
 ### Tuesday, 10/25: Data Literacy ≠ Statistical Literacy 
 
+- Motivating Questions: 
+   - What is the maximum statistical information allowable? What is the minimum? 
+   - How do we prime the inclusion of data visualizations? 
+   - What types of information are ethically advisable for acknowledging the purpose, context, and meaning of data that compose visualizations? 
+
 - Readings
   
   - Harrison et al. (2013) ["Influencing Visual Judgment through Affective Priming"](https://dl.acm.org/doi/pdf/10.1145/2470654.2481410)
 
 ### Thursday, 10/27: Lab Session 6 
 
-- Visualizing Uncertainty 
+- Visualizing uncertainty 
 
 ## Week 7: 10/31-11/4
 
@@ -121,7 +133,7 @@
 - Motivating Questions: 
    - How do our design choices influence public attitudes? 
    - How do we use visualization to avert misinformation? 
-
+   - 
 - Readings
 
    - Allen (2021)["The conventions and politics
@@ -171,3 +183,5 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 **Short Form Blog 3 Due 11/27 at 11:59** 
 
 ## Finals Week 12/5-12/9 
+
+**Final Blog Compilation Due 12/8 at 11:59** 
