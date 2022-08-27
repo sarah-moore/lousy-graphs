@@ -104,7 +104,7 @@
 
 **Visualization Dump 2 Due 10/24 at 12:59** 
 
-### Tuesday, 10/25: Data Literacy \neq Statistical Literacy 
+### Tuesday, 10/25: Data Literacy ≠ Statistical Literacy 
 
 - Readings
   
