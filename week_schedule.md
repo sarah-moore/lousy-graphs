@@ -1,5 +1,7 @@
 # Weekly Schedule 
 
+---- 
+
 ## Week 1: 9/20-9/23
 
 ### Tuesday, 9/20: Introduction to Class 
@@ -11,7 +13,11 @@
 
 - Intro to R and other Technology 
    - Ensure you have downloaded [R](https://cran.r-project.org/) and [RStudio](https://www.rstudio.com/).
-- Markdown language  
+- Markdown language
+
+- Building a site in Quarto
+
+---- 
 
 ## Week 2: 9/26-9/30 
 
@@ -20,8 +26,6 @@
 ### Tuesday, 9/27: Data Literacy as a Social Good 
 
 - Motivating Questions: 
-
-   - What are 'data'? 
 
    - What types of ethics exist around data and data visualization? 
   
@@ -42,9 +46,12 @@
 ### Thursday 9/29: Lab Session 2
 
 - Basic data viz in R, `tidyverse`, and `ggplot2` 
+
 - Troubleshooting 
 
- ## Week 3: 10/3-10/7 
+---- 
+
+## Week 3: 10/3-10/7 
 
 **Visualization Dump 1 Due 10/3 at 12:59** 
 
@@ -71,14 +78,17 @@
 
 - More advanced `ggplot2` and `dplyr` integration 
    
+---- 
 
 ## Week 4: 10/10-10/14 
 
 ### Tuesday, 10/11: Motivating Further Design Choices 
 
 - Motivating Questions: 
-   - How do we increase the readibility of visualizations? 
-   - 
+
+   - How do we increase the readability of visualizations? 
+   
+   - Is there a minimum or maximum threshold of information to put in a graph? How does this vary? 
 
 - Readings: 
    - Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
@@ -88,6 +98,8 @@
 ### Thursday, 10/13: Lab Session 4
 
 - Adding detail to plots, multiple plots, and more layers  
+
+---- 
 
 ## Week 5: 10/17-10/21
 
@@ -107,6 +119,8 @@
 
 - Scaling, coordinates, alternative measurements, and added specifications 
 
+---- 
+
 ## Week 6: 10/24-10/28
 
 **Visualization Dump 2 Due 10/24 at 12:59** 
@@ -114,8 +128,8 @@
 ### Tuesday, 10/25: Data Literacy ≠ Statistical Literacy 
 
 - Motivating Questions: 
-   - What is the maximum statistical information allowable? What is the minimum? 
-   - How do we prime the inclusion of data visualizations? 
+   - What is the maximum *statistical* information allowable? What is the minimum? 
+   - How do we prime the inclusion of data visualizations with statistical information? 
    - What types of information are ethically advisable for acknowledging the purpose, context, and meaning of data that compose visualizations? 
 
 - Readings
@@ -126,6 +140,8 @@
 
 - Visualizing uncertainty 
 
+---- 
+
 ## Week 7: 10/31-11/4
 
 ### Tuesday, 11/1: Managing Political and Contentious Data  
@@ -133,7 +149,7 @@
 - Motivating Questions: 
    - How do our design choices influence public attitudes? 
    - How do we use visualization to avert misinformation? 
-   - 
+   - Is there some way that we can curb "spin"?
 - Readings
 
    - Allen (2021)["The conventions and politics
@@ -147,15 +163,20 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 - Survey data, maps, and demography 
 
+---- 
+
 ## Week 8: 11/7-11/11
 
 **Short Form Blog 2 Due 11/7 at 11:59** 
 
 ### Tuesday, 11/8: Nesting Visualizations in Larger Texts 
+- Motivating Questions: 
 
 ### Thursday, 11/10: Lab Session 8 
 
 - Visualizing qualitative data 
+
+---- 
 
 ## Week 9: 11/14-10/18 
 
@@ -170,6 +191,8 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 - Interactive visualizations 
 
+---- 
+
 ## Week 10: 11/21-11/24
 
 ### Tuesday, 11/22: 
@@ -178,9 +201,12 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 ### Thursday, 11/24: **No Class for Thanksgiving Holiday** 
 
+---- 
+
 ## Reading Week 11/28-12/2
 
 **Short Form Blog 3 Due 11/27 at 11:59** 
+---- 
 
 ## Finals Week 12/5-12/9 
 
