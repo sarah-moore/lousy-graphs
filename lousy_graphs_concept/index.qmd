@@ -1,0 +1,15 @@
+---
+title: "Sarah Moore's Example Blog for PoliSci 390"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/sarah-moore/lousy-graphs
+
+---
+
+This is an example blog for Political Science 390: Visualizing Political Data at Northwestern University with Sarah Moore. 
+
+This example blog was built with Quarto, with help from Albert Rapp's fabulous ["Ultimate guide to starting a Quarto blog."](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)

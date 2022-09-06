@@ -1,0 +1,9 @@
+---
+title: 'Visualization Dump 1'
+date: '2022-09-01'
+description: 'This is the first visualization dump of the quarter where I provide 3 visualizations.'
+editor_options: 
+  chunk_output_type: console
+---
+
+Here is some stuff 

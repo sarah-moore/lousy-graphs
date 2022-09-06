@@ -1,0 +1,46 @@
+---
+title: "Visualizing Political Data: Avoiding Lousy Graphs and Sloppy Stats"
+subtitle: "Week 2: Data Literacy as a Social Good"
+author: "Sarah Moore" 
+format: 
+  revealjs: 
+    theme: solarized
+---
+
+# Welcome back! 
+
+## Today's Agenda: 
+
+- Intro to first assignment: Site Build (~10 min)
+
+- Peer reviewer intros + expectations of peer review (~20 min)
+
+- Short Lecture and Discussion: Data Literacy as a Social Good 
+
+# Assignment 1: Site Build 
+
+[Site Build](https://github.com/sarah-moore/lousy-graphs/blob/main/sitebuild.md)
+
+- Questions? 
+
+# Peer Reviewer Introductions 
+
+- Tried to pair people with different backgrounds and varied levels of experience. 
+
+- By the end of the 3rd week you should have decided with your partner a few shared expectations. This includes some "share by" dates, boundaries you would like to set in terms of communication, and particular ways you would like to communicate feedback (e.g. in-person meetings, comments on drafts, etc.). 
+
+- Take ~10 minutes to introduce yourselves, exchange your preferred form of contact, and set a date by which you will agree on your shared expectations. 
+
+# Peer Reviewer Expectations 
+
+Should you run into any issues or have questions, feel free to have a conversation with me or review the [expectations guide](https://github.com/sarah-moore/lousy-graphs/peer_review.md) on the course page. 
+
+# Today's Motivating Questions
+
+- What is 'data'? 
+
+- What types of ethics exist around data and data visualization? 
+  
+- What does good data literacy provide society? What are the consequences of *poor* data literacy? 
+  
+- What are *our* responsibilities around data management and data diffusion? 
