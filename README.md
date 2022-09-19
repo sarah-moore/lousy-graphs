@@ -93,9 +93,9 @@ Attendance in class is mandatory. The participation grade will be dependent on p
 | Date | Assignment | 
 | ----------- | ----------- |
 |10/3/2022   | Site Build Due| 
-|10/17/2022   | Week 2 Visualization Dump| 
-|11/24/2022    | Short Form Blog 2 | 
-|10/7/2022   | Week 5 Visualization Dump | 
-|11/14/2022   | Short Form Blog 3| 
-|11/27/2022   | Week 8 Visualization Dump | 
+|10/10/2022   | Visualization Dump 1| 
+|10/24/2022    | Short Form Blog 1| 
+|10/31/2022   | Visualization Dump 2| 
+|11/14/2022   | Short Form Blog 2| 
+|11/21/2022   | Visualization Dump 3| 
 |10/10/2022   | Final Blog Compilation | 
