@@ -46,13 +46,16 @@ Over the course of the quarter, students will be required to build a GitHub site
 
 Throughout the quarter you will have 3 opportunities to submit a visualization blog of the week. Each visualization blog will contain 3 data visualizations: 1 that you love, 1 that you hate, 1 of your own. Include the visualization’s context, an evaluation, and citation of each of these visualizations or the data source. Each blog week will focus on a specific theme, designated in the week preceding the post by the instructor. These themes will focus on both a current event as well as a specific element of data visualization. 
 
-4) 3 Short Form Blogs with relevant, original data visualizations (~1,200 words)- 30%
+4) 2 Short Form Blogs with relevant, original data visualizations (~1,200 words)- 30%
 
 5) Final Blog Compilation 
     
     a. _Edit & Redesign_ (10%): At the end of the quarter, you will redesign, edit, and proofread all previous blog submissions based on your peer and instructor review, as necessary.
   
     b. _Academic Translation_ (15%): As a final addition, you will also be required to translate a piece of already published political science work into a public-facing piece. This will be specifically interesting if you are able to nest it in historical news headlines—as if it were written when the headlines were relevant.
+
+
+**As a note, the work may seem like a lot to begin with. However, you are welcome and encouraged to use drafts of your visualization dumps in your short form blogs!** 
 
 **Participation (20%)**  
 Attendance in class is mandatory. The participation grade will be dependent on participation in class AND peer-review of other students’ materials. Over the quarter, you will have a class peer that will be your peer-reviewer for all submitted assignments, except for the weekly visualization dumps. The participation grade will reflect your satisfactory completion of peer-review tasks. 
@@ -89,11 +92,10 @@ Attendance in class is mandatory. The participation grade will be dependent on p
 
 | Date | Assignment | 
 | ----------- | ----------- |
-|09/26/2022   | Initial Site Build | 
-|10/03/2022   | Week 2 Visualization Dump| 
-|10/17/2022   | Short Form Blog 1 | 
-|10/24/2022   | Week 5 Visualization Dump | 
-|11/7/2022    | Short Form Blog 2 | 
-|11/14/2022   | Week 8 Visualization Dump | 
-|11/27/2022   | Short Form Blog 3| 
+|10/3/2022   | Site Build Due| 
+|10/17/2022   | Week 2 Visualization Dump| 
+|11/24/2022    | Short Form Blog 2 | 
+|10/7/2022   | Week 5 Visualization Dump | 
+|11/14/2022   | Short Form Blog 3| 
+|11/27/2022   | Week 8 Visualization Dump | 
 |10/10/2022   | Final Blog Compilation | 
