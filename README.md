@@ -88,4 +88,4 @@ Attendance in class is mandatory. The participation grade will be dependent on p
 |10/31/2022   | Visualization Blog 2| 
 |11/14/2022   | Short Form Blog 2| 
 |11/21/2022   | Visualization Blog 3| 
-|10/10/2022   | Final Blog Compilation | 
+|12/9/2022   | Final Blog Compilation | 
