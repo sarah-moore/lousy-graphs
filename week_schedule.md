@@ -80,7 +80,7 @@
 
 ## Week 4: 10/10-10/14 
 
-**Visualization Dump 1 Due 10/10 at 11:59** 
+**Visualization Blog 1 Due 10/10 at 11:59** 
 
 ### Tuesday, 10/11: Motivating Further Design Choices 
 
@@ -144,7 +144,7 @@
 
 ## Week 7: 10/31-11/4
 
-**Visualization Dump 2 Due 10/31 at 11:59** 
+**Visualization Blog 2 Due 10/31 at 11:59** 
 
 ### Tuesday, 11/1: Managing Political and Contentious Data  
 
@@ -204,7 +204,7 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 ## Week 10: 11/21-11/24
 
-**Visualization Dump 3 Due 11/21 at 11:59** 
+**Visualization Blog 3 Due 11/21 at 11:59** 
 
 ### Tuesday, 11/22: 
 
