@@ -21,8 +21,6 @@
 
 ## Week 2: 9/26-9/30 
 
-**Site Build Due 9/26 at 12:59** 
-
 ### Tuesday, 9/27: Data Literacy as a Social Good 
 
 - Motivating Questions: 
@@ -53,7 +51,7 @@
 
 ## Week 3: 10/3-10/7 
 
-**Visualization Dump 1 Due 10/3 at 12:59** 
+**Site Build Due 10/3 at 12:59** 
 
 ### Tuesday, 10/4: Basic Data Visualization Theory 
 
@@ -82,7 +80,28 @@
 
 ## Week 4: 10/10-10/14 
 
+**Visualization Dump 1 Due 10/10 at 11:59** 
+
 ### Tuesday, 10/11: Motivating Further Design Choices 
+
+- Motivating Questions: 
+   - When do I use *this* graph over __that__ graph? 
+
+- Readings: 
+   - Moore (2022) [Chapter 9]()
+
+   - Healy (
+
+
+### Thursday, 10/13: Lab Session 4
+
+- Adding detail to plots, multiple plots, and more layers  
+
+---- 
+
+## Week 5: 10/17-10/21
+
+### Tuesday, 10/18: Motivating Design Choices, cont'd.  
 
 - Motivating Questions: 
 
@@ -95,25 +114,6 @@
 
    - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
 
-### Thursday, 10/13: Lab Session 4
-
-- Adding detail to plots, multiple plots, and more layers  
-
----- 
-
-## Week 5: 10/17-10/21
-
-**Short Form Blog 1 Due 10/17 at 11:59**
-
-### Tuesday, 10/18: Complexities of Measurement and Scaling 
-
-- Motivating Questions: 
-
-   - 
-
-- Readings
-   - D'Ignazio and Klein (20https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf
-
 
 ### Thursday, 10/20: Lab Session 5 
 
@@ -123,7 +123,7 @@
 
 ## Week 6: 10/24-10/28
 
-**Visualization Dump 2 Due 10/24 at 12:59** 
+**Short Form Blog 1 Due 10/24 at 11:59**
 
 ### Tuesday, 10/25: Data Literacy ≠ Statistical Literacy 
 
@@ -144,6 +144,8 @@
 
 ## Week 7: 10/31-11/4
 
+**Visualization Dump 2 Due 10/31 at 11:59** 
+
 ### Tuesday, 11/1: Managing Political and Contentious Data  
 
 - Motivating Questions: 
@@ -158,7 +160,9 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
    - Lewandowsky et al. (2017)["Beyond Misinformation: Understanding and Coping with the “Post-Truth” Era"](https://reader.elsevier.com/reader/sd/pii/S2211368117300700?token=C8FE1CEFCED4A922A35BF64C3B390DDA4A530CC67261715A30F4E0962EF0E78EE3E00A264312E2F4C31DD311B351880F&originRegion=us-east-1&originCreation=20220826221552) 
 
    - Mena (2021)["Reducing misperceptions through news stories with data visualization: The role of readers’ prior knowledge and prior beliefs"](https://journals.sagepub.com/doi/pdf/10.1177/14648849211028762) 
-   
+  
+  - D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
+
 ### Thursday, 11/4: Lab Session 7 
 
 - Survey data, maps, and demography 
@@ -167,10 +171,15 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 ## Week 8: 11/7-11/11
 
-**Short Form Blog 2 Due 11/7 at 11:59** 
+### Tuesday, 11/8: Managing Political and Contentious Data, cont'd. 
 
-### Tuesday, 11/8: Nesting Visualizations in Larger Texts 
 - Motivating Questions: 
+   - How do we use data visualizations to enhance other's knowledge about political realities? 
+
+- Readings
+   - Mansky (2018) ["W.E.B. Du Bois' Visionary Infographics Come Together for the First Time in Full Color"](https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/) 
+
+   - Scheller (2019) ["Our favorite Pew Research Center data visualizations of 2019"](https://www.pewresearch.org/fact-tank/2019/12/30/our-favorite-pew-research-center-data-visualizations-of-2019/) 
 
 ### Thursday, 11/10: Lab Session 8 
 
@@ -180,7 +189,7 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 ## Week 9: 11/14-10/18 
 
-**Visualization Dump 3 Due 11/14 at 12:59** 
+**Short Form Blog 2 Due 11/14 at 11:59** 
 
 ### Tuesday, 11/15: Big Data, Missing Data, and Other Miscellaneous Problems 
 
@@ -194,6 +203,8 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 ---- 
 
 ## Week 10: 11/21-11/24
+
+**Visualization Dump 3 Due 11/21 at 11:59** 
 
 ### Tuesday, 11/22: 
 
