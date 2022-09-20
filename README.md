@@ -14,8 +14,6 @@ Mondays 2-4
 
 Fridays 10-12
 
-## [Schedule](/week_schedule.md)
-
 ## Course Learning Outcomes 
 
 1)	Applied management of data: 
@@ -64,15 +62,7 @@ Attendance in class is mandatory. The participation grade will be dependent on p
 [Course and university policy related to academic integrity, COVID-19 expectations, and accommodations for individuals with disabilities](/course_policies.md) 
 --------
 
-## Draft Course Schedule 
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Week 1-2    | What is Data Journalism? And Fundamentals of Data Visualization in R|
-| Week 3-5    | Graphical Design Choice and Advanced Data Visualization|
-| Week 6-7    | Description and Interpretation | 
-| Week 8      | Putting things Together: Visualization Narratives for Broad Audiences| 
-| Week 9-10  | Constructive Peer Review, Editorial Process, and Pitching Ideas| 
+## [Draft Course Schedule]((/week_schedule.md)
 
 ## Assignment Grading 
 
