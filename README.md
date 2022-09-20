@@ -62,7 +62,7 @@ Attendance in class is mandatory. The participation grade will be dependent on p
 [Course and university policy related to academic integrity, COVID-19 expectations, and accommodations for individuals with disabilities](/course_policies.md) 
 --------
 
-## [Draft Course Schedule]((/week_schedule.md)
+## [Draft Course Schedule](/week_schedule.md)
 
 ## Assignment Grading 
 
