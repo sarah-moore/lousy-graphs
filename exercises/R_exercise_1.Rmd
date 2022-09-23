@@ -1,9 +1,10 @@
 ---
-title: "Week 1 Practice"
 date: "`r Sys.Date()`"
 output:
   html_document: default
 ---
+
+# Week 1 Practice {#week1}
 Let's just practice around in R to get a feel for how R performs its operations. 
 
 We'll end the session by pushing our final script to the GitHub repository you made in class. (Or if you didn't make one, make one now for this class :]). 
