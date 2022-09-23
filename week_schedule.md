@@ -33,7 +33,7 @@
 
    - Albert Cairo (2014) ["Ethical Infographics"](https://www.dropbox.com/s/pqgmg02yz0pgju4/EthicalInfographics.pdf)
    
-   - Andrew Beers (2022)["Trust In The Digital Age Requires Data Ethics And A Data Literate Workforce](https://www.forbes.com/sites/tableau/2022/04/14/trust-in-the-digital-age-requires-data-ethics-and-a-data-literate-workforce/?sh=5ba83a3d5437) 
+   - Andrew Beers (2022) ["Trust In The Digital Age Requires Data Ethics And A Data Literate Workforce""](https://www.forbes.com/sites/tableau/2022/04/14/trust-in-the-digital-age-requires-data-ethics-and-a-data-literate-workforce/?sh=5ba83a3d5437) 
 
    - Matthew Correll (2018) ["Ethical Dimensions of Visualization Research"](https://arxiv.org/pdf/1811.07271.pdf)
     
