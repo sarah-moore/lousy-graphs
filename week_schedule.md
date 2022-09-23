@@ -52,7 +52,7 @@
 
 ## Week 3: 10/3-10/7 
 
-**Site Build Due 10/3 at 12:59** 
+**Site Build Due 10/3 at 11:59** 
 
 ### Tuesday, 10/4: Basic Data Visualization Theory 
 
