@@ -89,9 +89,9 @@
    - When do I use *this* graph over __that__ graph? 
 
 - Readings: 
-   - Moore (2022) [Chapter 9]()
+   - Moore (2022) [Chapter 9](https://nupolisci.github.io/nu_socscir/ch9.html)
 
-   - Healy (
+   - Healy ()
 
 
 ### Thursday, 10/13: Lab Session 4
