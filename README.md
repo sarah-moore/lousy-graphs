@@ -8,13 +8,13 @@ How do data savvy experts make quantitative research on political topics readabl
 
 An entry level empirical statistics course, such as POLISCI 210 or the statistics department equivalent, are required. Basic familiarity with statistical programming in R is encouraged.
 
-## DROP-IN HOURS 
+## DROP-IN HOURS: Scott 404 
 
 **Don't email, just show up!**
 
 Mondays 2-4 
 
-Fridays 10-12
+Thursdays 1 hour before class and 1 hour after 
 
 ## Course Learning Outcomes 
 
