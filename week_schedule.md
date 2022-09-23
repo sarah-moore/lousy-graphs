@@ -38,9 +38,9 @@
    - Matthew Correll (2018) ["Ethical Dimensions of Visualization Research"](https://arxiv.org/pdf/1811.07271.pdf)
     
     
-Optional: 
+- Optional: 
 
-   - Hasselbalch (2019) ["Making sense of data ethics. The powers behind the data ethics debate in European policymaking"](https://policyreview.info/pdf/policyreview-2019-2-1401.pdf)
+     - Hasselbalch (2019) ["Making sense of data ethics. The powers behind the data ethics debate in European policymaking"](https://policyreview.info/pdf/policyreview-2019-2-1401.pdf)
 
 ### Thursday 9/29: Lab Session 2
 
