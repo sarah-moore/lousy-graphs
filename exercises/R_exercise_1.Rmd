@@ -2,7 +2,6 @@
 title: "Week 1 Practice"
 date: "`r Sys.Date()`"
 output:
-  pdf_document: default
   html_document: default
 ---
 Let's just practice around in R to get a feel for how R performs its operations. 
