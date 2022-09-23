@@ -60,7 +60,7 @@ Throughout the quarter you will have 3 opportunities to submit a visualization b
 **Participation (20%)**  
 Attendance in class is mandatory. The participation grade will be dependent on participation in class AND peer-review of other students’ materials. Over the quarter, you will have a class peer that will be your peer-reviewer for all submitted assignments, except for the visualization blogs. The participation grade will reflect your satisfactory completion of peer-review tasks. 
 
-##[Additional R Exercises](https://sarah-moore.github.io/lousy-graphs/)
+## [Additional R Exercises](https://sarah-moore.github.io/lousy-graphs/)
 
 Not graded, but highly encouraged to stay up with the needs of the class. 
 
