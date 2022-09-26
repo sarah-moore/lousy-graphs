@@ -14,7 +14,7 @@ To submit this assignment, you will simply submit the URL associated with your s
 
 As a reminder you can use any of the following platforms to create your site: 
 
-1) Own GitHub repository.
+1) Your own GitHub repository.
   - In this instance, you should hyperlink your different posts on the main README.md. You can do this by including the following markdown code: `[text](url or file path)`
  
 2) [WordPress.org](wordpress.org) 
