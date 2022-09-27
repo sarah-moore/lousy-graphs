@@ -114,10 +114,9 @@
 - Readings: 
    - Wilke [Chapters 17-25](https://clauswilke.com/dataviz/proportional-ink.html)-- It's really not that much I promise 
 
-   Skim: 
-      - Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
-
-      - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
+Skim: 
+   - Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
+   - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
 
 ### Thursday, 10/20: Lab Session 5 
 
