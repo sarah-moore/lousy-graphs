@@ -31,9 +31,11 @@ library(tidyverse)
 # import the data using read_csv() from tidyverse's readr package
 incarceration <- read_csv("~/OneDrive - Northwestern University/Teaching/2022_Fall_DataViz/lousy-graphs/data/incarceration_trends.csv")
 
+# remember you can also do this via the link (so go to the data download at https://github.com/sarah-moore/lousy-graphs/blob/main/data/incarceration_trends.csv)
+
 # let's take a look at our data 
 
-glimpse(incarceration)
+#glimpse(incarceration)
 
 # cool, so now let's see what the pipe does; generally look like this: 
 
@@ -120,7 +122,6 @@ Sometimes we want to create a subset of our data. We can use the `select()` verb
 We'll get into more complicated motivations for using select later on (like when we want to identify certain strings in our data), but for now let's focus on the simple case of just looking for specific variable names. 
 
 ```{r}
-glimpse(incarceration)
 
 # let's get rid of everything but the state, county_name, and total_pop
 # we'll name this subset population_df
@@ -135,9 +136,148 @@ glimpse(population_df)
 incarceration %>%
   select(-c(county_name, total_pop))-> incarceration_no_county
 
-glimpse(incarceration_no_county)
+#glimpse(incarceration_no_county)
 ```
 
 Why we would use select in some instances will become more clear as you continue to move forward with some other `dplyr` functions. It will be really helpful as you try to make intermediate objects and want to make more elegant looking dataframes along the way. An intermediate object in `dplyr` is a dataframe or vector that you create with summarized data from your original dataset, but that is not really a subset either. So for example, our count dataframes (tibbles in `dplyr` language) would be intermediate objects. 
 
+## `filter()`
 
+Another likely option that you will encounter is `filter()`. Rather than filtering out data based on variable names (as `select()` does), `filter()` will get rid or keep data based on specific values that you specify. To do so requires a little bit more knowledge of the way base R deals with Boolean logic. Specifically, we need to know how to specify the following operations: 
+
+1) `==`: equals or is exactly equal to 
+2) `<=`, `>=`: Less than or equal to, greater than or equal to
+  - `<`, `>`: less than, greater than 
+3) `!`: not 
+4) `&`: and 
+5) `|`: or 
+
+So when we use filter we are going to tell R to keep some values or get rid of some values based on some condition. These can range in complexity, here we can start with the basics. 
+
+```{r}
+# let's say we only want to look at the urban jail population in our dataset 
+
+incarceration %>% 
+  filter(urbanicity == "urban")-> urban_incarceration
+
+# we'll check to see if this worked by using the unique() function 
+
+unique(urban_incarceration$urbanicity)
+
+# we successfully isolated the data to only include the urban incarceration data 
+
+# what if we wanted to include urban *or* suburban 
+
+incarceration %>% 
+  filter(urbanicity == "urban" | urbanicity == "suburban")-> urban_sub_incarceration
+
+unique(urban_sub_incarceration$urbanicity)
+
+# can also see if we have the right number of observations we would expect by checking our dimensions against the counts from the full dataset 
+
+dim(urban_sub_incarceration) #20,304
+
+incarceration %>% 
+  group_by(urbanicity)  %>% 
+  count()
+
+17296+3008 #20,304 
+
+# why would we not specify *AND* in this operation? 
+
+incarceration %>% 
+  filter(urbanicity == "urban" & urbanicity == "suburban")-> urban_and_sub_incarceration
+dim(urban_and_sub_incarceration) # why is it ZERO ? 
+
+
+# now let's filter the data that is NOT urban 
+# two ways 
+incarceration %>% 
+  filter(urbanicity == "rural" | urbanicity == "small/mid" | urbanicity == "suburban")-> smalltown_incarceration
+
+dim(smalltown_incarceration)
+
+incarceration %>% 
+  filter(urbanicity != "urban")-> smalltown_incarceration_2
+
+dim(smalltown_incarceration_2)
+
+# what if we wanted to filter based on the data that accounts with latinx jail population above the mean? 
+
+# first, check the mean 
+summary(incarceration$latino_jail_pop) #32.22
+
+incarceration %>% 
+  filter(latino_jail_pop >= mean(latino_jail_pop, na.rm = T)) -> higher_latino_pop
+
+# we should now expect that value from above to be our minimum 
+summary(higher_latino_pop$latino_jail_pop)
+
+```
+## `mutate()` and `summarize()`
+
+So far we haven't really focused on any of the verbs that actually change the data as much as change what data we are working with, i.e. what's in the dataframe. 
+
+Two verbs in `dplyr` are especially helpful for actually carrying out the process of data manipulation and transformation. Both can achieve similar tasks, but what you end up with as the resulting output is a bit different. 
+
+First, let's visit the *help file* from both of these verbs. 
+
+```{r}
+?mutate
+?summarize
+
+# let's create a variable that is a ratio of the people incarcerated for violent crime relative to property crime, we can save it to the original dataset 
+
+incarceration %>%
+  mutate(violent_prop_ratio= log((violent_crime+0.00000001)/(property_crime+0.00000001))) -> incarceration_plus
+
+summary(incarceration$violent_prop_ratio)
+
+# now let's summarize that by state and get the all time state-level mean using summarize()
+
+incarceration_plus %>% 
+  group_by(state) %>% 
+  summarize(mean_viol_prop_ratio=mean(violent_prop_ratio, na.rm=T))
+
+```
+
+# Joining together data
+
+`dplyr` also has multiple ways that you will join together data. To do so, you need to find a key variable between the data so that R can bind it together in some way. The easiest way to ensure you know which join you should be doing is to check out the help file using `?join`. 
+
+```{r}
+
+?join
+
+# i will use some code to split up the data into two dataframes 
+
+incarceration %>% 
+  select(year, fips, state, county_name, robbery_crime, burglary_crime, larceny_crime)-> crime_stealing
+
+incarceration %>% 
+  select(-c(robbery_crime, burglary_crime, larceny_crime))-> less_stealing
+
+# now i want to merge the two back together 
+# i need to pick the variables to do it on (fips, state, county_name)
+# i'll use inner_join which gives us the rows in x and y 
+
+less_stealing %>%
+  inner_join(crime_stealing, by=c('year', 'fips', 'state', 'county_name'))-> new_incarceration
+
+dim(incarceration)
+dim(new_incarceration)
+
+# which variables were most consequential?
+
+less_stealing %>%
+  left_join(crime_stealing, by=c('year', 'fips', 'state', 'county_name'))-> left_incarceration
+dim(left_incarceration)
+
+less_stealing %>%
+  right_join(crime_stealing, by=c('year', 'fips', 'state', 'county_name'))-> right_incarceration
+dim(right_incarceration)
+
+less_stealing %>%
+  full_join(crime_stealing, by=c('year', 'fips', 'state', 'county_name'))-> full_incarceration
+dim(full_incarceration)
+```
