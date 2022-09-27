@@ -1,0 +1,143 @@
+---
+title: "Lab Session 2"
+subtitle: "Starting Out In Tidyverse" 
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# WHAT IS THE TIDYVERSE? 
+
+- Mentioned briefly last week that it's this suite of packages in R. We mostly will use verbs associated with `dplyr`. 
+
+- Can chain together functions in really elaborate and useful ways so that our code is efficient and easy to debug. 
+
+- To get started, let's actually start an R project. As you'll see mine is already set to the repo of this class up in the right-hand corner. All you need to do is click that icon, choose "New Project" and then pick the working directory as the file that you made for this class. 
+
+- Once you have done so, we'll explore the `tidyverse` 
+
+# Pipes and `dplyr`
+
+- `dplyr` is a package meant specifically for data manipulation and transformation.
+
+- We use the `%>%` pipe to bring together verbs in `dplyr` (and sometimes base R) to get outputs that might filter, summarize, or our data (and more). 
+
+- Let's see how the pipe works. We can return to the incarceration data from our previous R exercise. It's available in the course GitHub's new "data" folder.  
+
+```{r, include= T}
+# load the tidyverse package 
+library(tidyverse)
+
+# import the data using read_csv() from tidyverse's readr package
+incarceration <- read_csv("~/OneDrive - Northwestern University/Teaching/2022_Fall_DataViz/lousy-graphs/data/incarceration_trends.csv")
+
+# let's take a look at our data 
+
+glimpse(incarceration)
+
+# cool, so now let's see what the pipe does; generally look like this: 
+
+# df %>% 
+  # function() %>% 
+  # other_function() -> new_df 
+
+# let's consider the group_by() function in dplyr-- we'll group by state and see how many observations there are of the urbanicity variable 
+
+incarceration %>% 
+  group_by(state) %>% 
+  count(urbanicity)
+
+# what is this telling us 
+# generally, it's taking the dataframe, asking it to gather the objects from each state and count how many times each value of this other variable occur
+
+# let's try another one
+
+# instead let's get the count of NAs on the arson_crime variable, grouped by year
+
+incarceration %>% 
+  group_by(year) %>% 
+  count(is.na(arson_crime))
+
+# can anyone tell me what's going on here? 
+```
+
+# More `dplyr` verbs 
+
+We'll get more practice with the pipe operator as we go on. We can also save objects from our piped workflow, as I showed in the general example above. This occurs like you would save any other object in R. However, in a  `tidyverse` workflow, it's typical that you'll see the assignment operator flow to the right `->`, as opposed to the typical base R leftwise operator (`<-`). Both achieve the same thing, it's just a convention for this workflow. 
+
+## `group_by()`
+
+We already visited this function above. Do we get a feel of what it's doing? 
+
+```{r}
+# how many facilities are categorized along each of the values in the urbanicity variable?
+
+incarceration %>% 
+  group_by(urbanicity) %>%
+  count()
+
+# what are some instances where group_by is not a great option? 
+
+incarceration %>% 
+  group_by(num_facilites) %>% 
+  count()
+
+# this works okay... but what about this 
+
+incarceration %>% 
+  group_by(latino_jail_pop) %>%
+  count()
+
+# ... not so great 
+```
+
+So this might be kind of intuitive, we don't want to group by anything that has too many values. But particularly we can think of this in terms of how we categorize variables-- *discrete or continuous.* A discrete variable will take on a countable value, whereas a continuous is non-countable. What does this mean? Let's think for example of some variables in social science: 
+
+  1) GDP per capita 
+  
+  2) Satisfaction scores with a politician [1:7]
+  
+  3) Debt ratios 
+  
+  4) Trust in politicians scored 1 to 4
+
+Based on the definition above which are discrete and which are continuous? 
+
+**Why does this matter??** In data analysis, and more specifically in data visualization, we need to have an idea of the shape that our data *ought* to take, or at least what is possible. Being able to identify whether your data are countable or uncountable has implications for whether we visualize it one way or another. 
+
+The `group_by()` function is illustrative of this point, and the importance of identifying variables as *discrete* or *continuous* will come up outside of `group_by()`. 
+
+### `count()`
+
+I also threw another `dplyr` verb in here without explanation-- `count()`. This one is straightforward, it really just counts the number of observations of the variable specified, or the number of observations along the grouping specified. 
+
+If you are familiar with histograms, think of this as the data that generates a histogram. It is just the frequency of each observation. 
+
+## `select()`
+
+Sometimes we want to create a subset of our data. We can use the `select()` verb to do so. This verb allows us to pick the columns of our data that we want and ditch the rest for now. 
+
+We'll get into more complicated motivations for using select later on (like when we want to identify certain strings in our data), but for now let's focus on the simple case of just looking for specific variable names. 
+
+```{r}
+glimpse(incarceration)
+
+# let's get rid of everything but the state, county_name, and total_pop
+# we'll name this subset population_df
+
+incarceration %>% 
+  select(state, county_name, total_pop) -> population_df
+
+glimpse(population_df)
+
+
+# we can also use select as a way to weed out certain variables that we don't want 
+incarceration %>%
+  select(-c(county_name, total_pop))-> incarceration_no_county
+
+glimpse(incarceration_no_county)
+```
+
+Why we would use select in some instances will become more clear as you continue to move forward with some other `dplyr` functions. It will be really helpful as you try to make intermediate objects and want to make more elegant looking dataframes along the way. An intermediate object in `dplyr` is a dataframe or vector that you create with summarized data from your original dataset, but that is not really a subset either. So for example, our count dataframes (tibbles in `dplyr` language) would be intermediate objects. 
+
+
