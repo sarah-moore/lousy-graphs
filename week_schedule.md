@@ -92,7 +92,7 @@
 - Readings: 
    - Wilke [Chapters 2-5](https://clauswilke.com/dataviz)
 
-   - [Healy](https://socviz.co/lookatdata.html) Read around, probably ch 1 and 3)-- This is just good to revisit all quarter long. 
+   - [Healy](https://socviz.co/lookatdata.html) Read around, probably ch 1 and 3-- This is just good to revisit all quarter long. 
 
 
 ### Thursday, 10/13: Lab Session 4
@@ -112,10 +112,12 @@
    - Is there a minimum or maximum threshold of information to put in a graph? How does this vary? 
 
 - Readings: 
-   - Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
+   - Wilke [Chapters 17-25](https://clauswilke.com/dataviz/proportional-ink.html)-- It's really not that much I promise 
 
-   - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
+   Skim: 
+      - Achim Zeileis, Kurt Hornik, Paul Murrell (2009)["Escaping RGBland: Selecting colors for statistical graphics"](https://www.sciencedirect.com/science/article/abs/pii/S0167947308005549?via%3Dihub) 
 
+      - Kim et al. (2021) ["Accessible Visualization: Design Space, Opportunities, and Challenges](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14298) 
 
 ### Thursday, 10/20: Lab Session 5 
 
@@ -138,6 +140,7 @@
   
   - Harrison et al. (2013) ["Influencing Visual Judgment through Affective Priming"](https://dl.acm.org/doi/pdf/10.1145/2470654.2481410)
   - Goldstein and Rothschild (2014) ["Lay Understanding of Probability Distributions"](https://journal.sjdm.org/13/131029/jdm131029.pdf) 
+  - Wilke, [Chapter 16](https://clauswilke.com/dataviz/visualizing-uncertainty.html) 
 
 ### Thursday, 10/27: Lab Session 6 
 
