@@ -58,7 +58,7 @@
 
 - Motivating Questions: 
 
-   - What is *data visualization* and is this just about graphs? 
+   - Is this just about graphs? 
    
    - What decisions guide the visualization process? 
    
@@ -87,11 +87,12 @@
 
 - Motivating Questions: 
    - When do I use *this* graph over __that__ graph? 
+   - What am I visualizing? 
 
 - Readings: 
-   - Moore (2022) [Chapter 9](https://nupolisci.github.io/nu_socscir/ch9.html)
+   - Wilke [Chapters 2-5](https://clauswilke.com/dataviz)
 
-   - Healy ()
+   - [Healy](https://socviz.co/lookatdata.html) Read around, probably ch 1 and 3)-- This is just good to revisit all quarter long. 
 
 
 ### Thursday, 10/13: Lab Session 4
@@ -136,6 +137,7 @@
 - Readings
   
   - Harrison et al. (2013) ["Influencing Visual Judgment through Affective Priming"](https://dl.acm.org/doi/pdf/10.1145/2470654.2481410)
+  - Goldstein and Rothschild (2014) ["Lay Understanding of Probability Distributions"](https://journal.sjdm.org/13/131029/jdm131029.pdf) 
 
 ### Thursday, 10/27: Lab Session 6 
 
@@ -161,8 +163,7 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
    - Lewandowsky et al. (2017)["Beyond Misinformation: Understanding and Coping with the “Post-Truth” Era"](https://reader.elsevier.com/reader/sd/pii/S2211368117300700?token=C8FE1CEFCED4A922A35BF64C3B390DDA4A530CC67261715A30F4E0962EF0E78EE3E00A264312E2F4C31DD311B351880F&originRegion=us-east-1&originCreation=20220826221552) 
 
    - Mena (2021)["Reducing misperceptions through news stories with data visualization: The role of readers’ prior knowledge and prior beliefs"](https://journals.sagepub.com/doi/pdf/10.1177/14648849211028762) 
-  
-  - D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
+ 
 
 ### Thursday, 11/4: Lab Session 7 
 
@@ -196,6 +197,8 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 - Readings:
 
+   - D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
+   
 
 ### Thursday, 11/17: Lab Session 9 
 
