@@ -27,6 +27,7 @@ output: html_document
 ```{r, include= T}
 # load the tidyverse package 
 library(tidyverse)
+install.packages("tidyverse", dependencies = T)
 
 # import the data using read_csv() from tidyverse's readr package
 incarceration <- read_csv("~/OneDrive - Northwestern University/Teaching/2022_Fall_DataViz/lousy-graphs/data/incarceration_trends.csv")
@@ -58,7 +59,12 @@ incarceration %>%
 
 incarceration %>% 
   group_by(year) %>% 
-  count(is.na(arson_crime))
+  count(is.na(arson_crime)) -> arson_crime_nas
+
+
+arson_crime_nas<- incarceration %>% 
+  group_by(year) %>% 
+  count(is.na(arson_crime)) 
 
 # can anyone tell me what's going on here? 
 ```
@@ -82,7 +88,7 @@ incarceration %>%
 
 incarceration %>% 
   group_by(num_facilites) %>% 
-  count()
+count()
 
 # this works okay... but what about this 
 
@@ -136,7 +142,7 @@ glimpse(population_df)
 incarceration %>%
   select(-c(county_name, total_pop))-> incarceration_no_county
 
-#glimpse(incarceration_no_county)
+glimpse(incarceration_no_county)
 ```
 
 Why we would use select in some instances will become more clear as you continue to move forward with some other `dplyr` functions. It will be really helpful as you try to make intermediate objects and want to make more elegant looking dataframes along the way. An intermediate object in `dplyr` is a dataframe or vector that you create with summarized data from your original dataset, but that is not really a subset either. So for example, our count dataframes (tibbles in `dplyr` language) would be intermediate objects. 
@@ -148,7 +154,7 @@ Another likely option that you will encounter is `filter()`. Rather than filteri
 1) `==`: equals or is exactly equal to 
 2) `<=`, `>=`: Less than or equal to, greater than or equal to
   - `<`, `>`: less than, greater than 
-3) `!`: not 
+3) `!`: not or `!=` not equal 
 4) `&`: and 
 5) `|`: or 
 
@@ -229,15 +235,20 @@ First, let's visit the *help file* from both of these verbs.
 # let's create a variable that is a ratio of the people incarcerated for violent crime relative to property crime, we can save it to the original dataset 
 
 incarceration %>%
-  mutate(violent_prop_ratio= log((violent_crime+0.00000001)/(property_crime+0.00000001))) -> incarceration_plus
+  mutate(violent_prop_ratio = log((violent_crime+0.00000001)/(property_crime+0.00000001))) -> incarceration_plus
 
-summary(incarceration$violent_prop_ratio)
+summary(incarceration_plus$violent_prop_ratio)
 
 # now let's summarize that by state and get the all time state-level mean using summarize()
 
 incarceration_plus %>% 
-  group_by(state) %>% 
-  summarize(mean_viol_prop_ratio=mean(violent_prop_ratio, na.rm=T))
+  summarize(mean_viol_prop_ratio = mean(violent_prop_ratio, na.rm=T), 
+            median_viol_prop_ratio = median(violent_prop_ratio, na.rm=T), 
+            min_viol_prop_ratio = min(violent_prop_ratio, na.rm=T))
+mean()
+median()
+min()
+max()
 
 ```
 
@@ -258,7 +269,7 @@ incarceration %>%
   select(-c(robbery_crime, burglary_crime, larceny_crime))-> less_stealing
 
 # now i want to merge the two back together 
-# i need to pick the variables to do it on (fips, state, county_name)
+# i need to pick the variables to do it on (year, fips, state, county_name)
 # i'll use inner_join which gives us the rows in x and y 
 
 less_stealing %>%
