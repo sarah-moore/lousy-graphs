@@ -6,6 +6,8 @@ This build is in the case that you want to create a personal website.
 
 In each of these options, I have assumed that you want to use GitHub pages because you want something that is customizable, elegant, but limited backend development on your end. To that point, you will first need to find a **Theme** that you want for your site. GitHub pages uses *Jekyll* to facilitate the CSS and html portions of the gh page design. There are many complicated ways to get into this, but here I'll try to go through the minimally intensive routes if you are just interested in getting a site up and running. 
 
+I've also assumed that you, at a minimum, have a GitHub account. If this is not the case, then we need to take a few steps back and do that. Furthermore, if you want to integrate this in a *local workflow* on your own computer, you'll need to ensure that you have Git and GitHub Desktop downloaded. This is more complicated and I recommend that you just look up how to do this based on your home operating system. 
+
 To find a free Jekyll theme you can head to [this link.](https://jekyllthemes.io/free) Based on the theme you choose, you have a couple of options. Option 1 is probably easiest and most likely and Option 2 might be good if you find a theme that you can't fork directly from. 
 
 *Note*: In some cases, the developers of a Jekyll theme have also deployed a template for you to just start on right away. This will be something like a *remote access* or something like that. That will be easier than the steps that follow. BUT is not always available. 
