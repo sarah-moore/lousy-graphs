@@ -8,6 +8,8 @@ In each of these options, I have assumed that you want to use GitHub pages becau
 
 To find a free Jekyll theme you can head to [this link.](https://jekyllthemes.io/free) Based on the theme you choose, you have a couple of options. Option 1 is probably easiest and most likely and Option 2 might be good if you find a theme that you can't fork directly from. 
 
+*Note*: In some cases, the developers of a Jekyll theme have also deployed a template for you to just start on right away. This will be something like a *remote access* or something like that. That will be easier than the steps that follow. BUT is not always available. 
+
 ## Option 1: Fork a theme and then customize 
 
 So you find a theme that works particularly well for your needs. The easiest case is that theme is already housed for free on a GitHub repository out there. Here are the steps to publishing that theme as *your own* gh page. 
