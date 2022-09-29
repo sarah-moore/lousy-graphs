@@ -44,7 +44,7 @@ Click that link and you can see the first publication of your working site.
 
 6) So obviously this site is customized to the extent that it is the build that you want BUT, nothing else is yours. First, I would suggest taking a look at the documentation included with the theme. This documentation will tell you what is what and how to customize the site to be *yours*. 
 
-Everything will be sort of theme/site build dependent, but I'll go over some basic concepts.  
+Everything will be sort of theme/site build dependent, but I'll go over some basic concepts. But first I have a few auxiliary points: 
 
 - You might also want to switch to the local version of the files at this point while you edit them. If that's the case, then you can go to GH Desktop, **Clone** the repo on to your local machine, and then edit the files as you please from there. Just remember for these changes to be reflected on the remote GH repo that you need to **Commit** and **Push** your local changes so that the site will build according to the changes you specified. 
 
