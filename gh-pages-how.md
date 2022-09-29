@@ -14,7 +14,7 @@ So you find a theme that works particularly well for your needs. The easiest cas
 
 1) Let's say I wanted to choose the theme [_*Minimal Mistakes*_](https://jekyllthemes.io/theme/minimal-mistakes) from the free Jekyll theme site. I can click on that theme, which redirects me to the theme's [GH repo](https://github.com/mmistakes/minimal-mistakes). 
 
-2) From this GH repo I can choose to **Fork** the repo. Forking a repo allows you to pull another contributor's repo content as is *as your own repository*, without it affecting the base repository. 
+2) From this GH repo I can choose to **Fork** the repo. Forking a repo allows you to pull another contributor's repo content, as is, *as your own repository*, without it affecting the base repository. 
 
 To fork a repo, simply click the **Fork** button on the top left-hand side of the page. I've pointed that out below. 
 
