@@ -2,7 +2,7 @@
 
 This guide will help you get set up on GitHub pages. 
 
-This build is in the case that you want to create a personal website. If you would like to make your gh pages based off a specific repository I have added those steps below. 
+This build is in the case that you want to create a personal website. 
 
 In each of these options, I have assumed that you want to use GitHub pages because you want something that is customizable, elegant, but limited backend development on your end. To that point, you will first need to find a **Theme** that you want for your site. GitHub pages uses *Jekyll* to facilitate the CSS and html portions of the gh page design. There are many complicated ways to get into this, but here I'll try to go through the minimally intensive routes if you are just interested in getting a site up and running. 
 
