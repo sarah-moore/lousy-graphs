@@ -222,7 +222,6 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 ## Reading Week 11/28-12/2
 
-**Short Form Blog 3 Due 11/27 at 11:59** 
 ---- 
 
 ## Finals Week 12/5-12/9 
