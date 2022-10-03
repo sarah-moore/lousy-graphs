@@ -8,7 +8,7 @@ This ungraded exercise will help you continue to catch up with some of the `tidy
 
 To complete this exercise, we'll use the ANES 2020 data. This is data from the American National Election Studies, which is a nationally representative survey of voting age adults conducted at every election cycle throughout the US. This data is available in the [data folder](https://github.com/sarah-moore/lousy-graphs/tree/main/data) on the course GitHub. I've imported it using the GitHub link below. 
 
-```{r, eval=T, echo =F, results='hide'}
+```{r, eval=T, echo =T, results='hide'}
 library(tidyverse)
 
 elec_study<- read_csv("https://raw.githubusercontent.com/sarah-moore/lousy-graphs/main/data/2020_ANES.csv")

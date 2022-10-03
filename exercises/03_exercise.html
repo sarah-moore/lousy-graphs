@@ -382,6 +382,7 @@ representative survey of voting age adults conducted at every election
 cycle throughout the US. This data is available in the <a href="https://github.com/sarah-moore/lousy-graphs/tree/main/data">data
 folder</a> on the course GitHub. I’ve imported it using the GitHub link
 below.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
 <pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
 ## ✔ ggplot2 3.3.6      ✔ purrr   0.3.4 
 ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
@@ -390,6 +391,7 @@ below.</p>
 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>elec_study&lt;- read_csv(&quot;https://raw.githubusercontent.com/sarah-moore/lousy-graphs/main/data/2020_ANES.csv&quot;)</code></pre>
 <pre><code>## Warning: One or more parsing issues, see `problems()` for details</code></pre>
 <pre><code>## Rows: 8280 Columns: 1771
 ## ── Column specification ────────────────────────────────────────────────────────
@@ -399,6 +401,7 @@ below.</p>
 ## 
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>glimpse(elec_study) #8,280 obs of 1,771 var</code></pre>
 <p>So, this dataset is pretty large. Let’s focus in on a few different
 variables that we want to work with so that we’re not having to deal
 with the full dataset the entire time. We’ll keep the following:</p>
