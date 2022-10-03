@@ -1,0 +1,186 @@
+---
+title: "R Exercise 3"
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output: html_document
+---
+This ungraded exercise will help you continue to catch up with some of the `tidyverse` basics, especially as relates to `dplyr`. You'll also take a look at some of the basic ways that base R plots things, which I hope will motivate why we want to use the much more elegant and adaptable `ggplot2` package for graphics instead. 
+
+To complete this exercise, we'll use the ANES 2020 data. This is data from the American National Election Studies, which is a nationally representative survey of voting age adults conducted at every election cycle throughout the US. This data is available in the [data folder](https://github.com/sarah-moore/lousy-graphs/tree/main/data) on the course GitHub. I've imported it using the GitHub link below. 
+
+```{r, eval=T, echo =F, results='hide'}
+library(tidyverse)
+
+elec_study<- read_csv("https://raw.githubusercontent.com/sarah-moore/lousy-graphs/main/data/2020_ANES.csv")
+
+glimpse(elec_study) #8,280 obs of 1,771 var
+
+```
+
+So, this dataset is pretty large. Let's focus in on a few different variables that we want to work with so that we're not having to deal with the full dataset the entire time. We'll keep the following: 
+
+**a. V200001: Respondent ID**
+
+**b. V201549x: Self-ID race or ethnicity**
+
+  1. White, non-Hispanic 
+  2. Black, non-Hispanic 
+  3. Hispanic 
+  4. Asian or Native Hawaiian/other Pacific Islander, non-Hispanic 
+  5. Native American/Alaska Native or other race, non-Hispanic 
+  6. Multiple races, non-Hispanic
+  
+**c. V201553: Native status of parents**
+
+  1. Both parents born in the US 
+  2. One parent born in the US 
+  3. Both parents born in another country
+  
+**d. V201554: Respondent's place of birth**
+
+  1. US state or Washington, D.C. 
+  2. Puerto Rico
+  3. Another U.S. territory 
+  4. Another country 
+  
+**e. V201546: Hispanic ID**
+
+  1. Yes
+  2. No 
+  
+**f. V201558x: Specific Hispanic ID ** 
+
+  1. Mexican 
+  2. Puerto Rican 
+  3. Other Hispanic or more than one mention
+  4. Hispanic, type not determined 
+  7. Not Hispanic 
+  
+**g. V201594: Worried about current financial situation of family**
+
+  1. Extremely worried
+  2. Very worried 
+  3. Moderately worried 
+  4. A little worried 
+  5. Not at all worried
+  
+**h. V201600: Self ID sex **
+
+  1. Male 
+  2. Female 
+  
+**i. V201602: People are justified to use violence for political gain**
+
+  1. Not at all 
+  2. A little 
+  3. A moderate amount 
+  4. A lot 
+  5. A great deal 
+
+```{r, eval=T}
+
+# use select in a piped sequence to keep these variables that we want 
+# added!!! RENAME these variables in the select command to have a better idea of what they are 
+
+elec_study %>% 
+  select(resp_id = V200001, race_eth = V201549x, native_par = V201553, resp_birthplace = V201554, 
+         hispanic = V201546, hispanic_id = V201558x, financial_anx = V201594, resp_sex = V201600, 
+         viol_politics = V201602) -> elec_study_sub
+
+glimpse(elec_study_sub)
+```
+
+When you look at the codebook (also on GitHub), you will also realize that there are some strange values accounted for as non-response (-9) or interview breakoff (-5). We want to change these to NAs otherwise they will mess with whatever we are calculating. 
+
+```{r, eval = T}
+# load a new package (remember to install first)
+library(fauxnaif)
+
+# create a vector of the values we want to get rid of 
+bad_values <- c(-5, -7, -8, -9)
+
+# use mutate with the command across() to specify which columns we want to change, in this case we want to change everything 
+# specify the function we want applied across all these columns as na_if_in and then use the bad_values vector to specify those are the values we want changed to NA 
+elec_study_sub %>% 
+  mutate(across(everything(), na_if_in, bad_values)) -> elec_study_sub
+
+# can check to see if it worked as planned 
+
+any(elec_study_sub[elec_study_sub==-5 | elec_study_sub==-7 | elec_study_sub==-9 | elec_study_sub==-8]) # all good! 
+```
+
+Now that we are dealing with cleaner data, we can do some things to figure out what is going on in that data! 
+
+Let's take a look at how race and ethnicity might be tied to financial anxiety. 
+```{r, eval=T}
+
+#this looks pretty complicated, try to figure out what I have done here: 
+elec_study_sub %>% 
+  group_by(race_eth) %>%
+  filter(!is.na(financial_anx)) %>%
+  count(financial_anx) %>% 
+  summarize(percent = n/sum(n), financial_anx) -> financial_anx_race
+
+# this is kind of messy so what else can we do to it?? 
+
+# let's instead look at summarizing to have the mean and the standard deviation 
+elec_study_sub %>%
+  group_by(race_eth) %>% 
+  summarize(avg_anx = mean(financial_anx, na.rm = T), sd_anx = sd(financial_anx, na.rm = T)) -> financial_anx_summary
+
+```
+
+But what's the point? This week we'll go from having these as just complex data frames to making them into interesting and information-laden graphics! 
+
+**Working Examples (these are not great but illustrative):** 
+
+![Percentages of levels of financial anxiety by racial or ethnic group](/Users/sarahmoore/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/exercises/financial_anx_race.png){width=55%}
+
+![Average level of Financial Anxiety Across Racial or Ethnic Groups of Respondents](/Users/sarahmoore/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/exercises/financial_anx_summary.png){width=55%}
+
+```{r, eval= F, include=F, results='asis', echo = T}
+
+financial_anx_race_gg<- financial_anx_race %>% 
+  filter(!is.na(race_eth)) %>%
+  ggplot(aes(x = as_factor(race_eth), y = percent*100, fill= as_factor(financial_anx))) + 
+  geom_histogram(stat = "identity")  +
+  scale_x_discrete(labels=c("White", "Black", "Hispanic", "Asian or\nPacific Islander", "Native\nAmerican", "Multi-Racial"))+
+  labs(y= "Percent of Respondents in Group", x = "Race or Ethnicity")
+ggsave("/Users/sarahmoore/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/exercises/financial_anx_race.png")
+
+financial_anx_summary %>% 
+  filter(!is.na(race_eth)) %>% 
+  ggplot(aes(x = avg_anx, y = as_factor(race_eth)))+ 
+  geom_bar(stat = 'identity') + 
+  coord_cartesian(xlim = c(1,5)) + 
+  labs(y= "Race or Ethnicity", x = "Average Level of Household Financial Anxiety") +   
+  scale_y_discrete(labels=c("White", "Black", "Hispanic", "Asian or\nPacific Islander", "Native\nAmerican", "Multi-Racial"))
+
+ggsave("/Users/sarahmoore/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/exercises/financial_anx_summary.png")
+
+```
+
+Let's continue to play around with this data 
+
+Let's check out with the average justification that people give for violence for political gain given whether their parents are foreign-born or native-born (relative to the United States). Perhaps we could have this idea that people who have greater exposure to different political environments are less likely to support violence for political gain, relative to those who do not have such experience.
+
+```{r, eval = T}
+
+elec_study_sub %>%
+  filter(!is.na(viol_politics), !is.na(native_par)) %>%
+  group_by(native_par) %>% 
+  count(viol_politics)%>% 
+  summarize(viol_politics, percent = n/sum(n)) -> viol_pol_sub
+
+viol_pol_sub %>% 
+  arrange(viol_politics)
+#does it seem like there is a clear relationship? probably not.
+
+# base R plots
+boxplot(elec_study_sub$viol_politics~elec_study_sub$native_par)
+
+hist(elec_study_sub$viol_politics)
+hist(elec_study_sub$native_par)
+```
+
+
