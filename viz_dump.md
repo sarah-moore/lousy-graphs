@@ -20,3 +20,12 @@ This week we are going over *just the basics* of data viz, so whatever visualiza
 
 
 ## Visualization Blog 3: Interactive Visualizations, Big Data, and Qualitative Data 
+
+# Assignment Grading (5pts.)
+
+- You included one visualization (or more than one) for each of the three elements specified for each blog post. (+2)
+
+- You included a short discussion ($\pm$100) for each of the visualizations included. (+2)
+
+- You embedded the visualizations and respective discussions into your existing site. (+1)
+
