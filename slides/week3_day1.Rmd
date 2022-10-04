@@ -1,0 +1,232 @@
+---
+title: '`ggplot` basics'
+author: "Sarah Moore"
+---
+
+## Moving to the next element of the tidyverse: `ggplot2` 
+Last week we discussed `dplyr`, and unbeknownst to all of you we also used `readr` and maybe a couple other parts of `tidyverse` that are all just standard now. 
+
+Today we're not going to *ditch* `dplyr` and all that entirely (for now), but we will shift gears a bit so that we can get to `ggplot2`. Later this week we'll figure out how to use the two together. 
+
+```{r, echo = TRUE, results= 'hide'}
+# load tidyverse 
+library(tidyverse)
+
+# check to see that ggplot2 is available among tidyverse packages 
+tidyverse_packages()
+```
+
+
+# Idea of `ggplot2`
+
+- Based on Grammar of Graphics concepts developed quite a while back. 
+
+- Easy, additive way to create graphics. 
+
+Base R makes graphics really difficult to implement in an intuitive way. Furthermore, the base R graphics package is NOT very open for customization. 
+
+## Motivating Data, pt. 1
+
+This data comes from ACLED. It is conflict event data from Colombia, where each unit of observation is recorded incident of violence perpetrated against civilians. 
+
+```{r, echo=T, results='hide'}
+civ_violence_col<-read_csv("https://raw.githubusercontent.com/sarah-moore/lousy-graphs/main/data/2022_ACLED_civ_colombia.csv")
+
+glimpse(civ_violence_col)
+# 5,565 events 
+```
+
+# To get to know the data, what are some things we should look at?
+
+## Exploring the data 
+
+- Let's find out the unique `year` values available in the data, the unique values of the `admin1` variable, the unique values of the `location` variable, and the summary of the `fatalities` variable. 
+
+```{r, echo = T, results='hide'}
+
+# years available 
+summary(civ_violence_col$year) # 2018-2022
+
+# unique admin1 
+length(unique(civ_violence_col$admin1)) # 32
+
+# unique location
+length(unique(civ_violence_col$location)) # 1,066 
+
+# summary of fatalities variable 
+
+summary(civ_violence_col$fatalities) #min = 0, mean = 1.063, max = 11 
+```
+
+## Let's try something in base R first 
+
+```{r, echo =T}
+
+hist(civ_violence_col$fatalities)
+
+# can further customize title, labels, breaks, etc. 
+
+hist(civ_violence_col$fatalities, 
+     main = "Histogram: Fatalities Recorded in Colombia ACLED Data", 
+     xlab= "Number of Fatalities", breaks = 11, ylim = c(0,5000), 
+     labels = T)
+
+
+boxplot(civ_violence_col$fatalities~civ_violence_col$year, 
+        horizontal = T)
+
+# not so pretty :( 
+
+```
+## Let's try the same with `ggplot2` 
+
+```{r}
+civ_violence_col %>% # start with data
+  ggplot(aes(x = civ_violence_col$fatalities)) + # specify data to be plotted 
+    geom_bar() # specify the type of geometric layer to apply 
+
+# already looks much better 
+
+# now let's add details, can simply add more with + followed by function 
+
+civ_violence_col %>%
+  ggplot(aes(x = fatalities)) + 
+  geom_histogram(bins=11) + 
+  ylim(0, 5000) + 
+  labs(x = "Number of Fatalities Recorded", y = "Frequency",
+       title = "Frequency of Recorded Fatalities", 
+       subtitle="Histogram of recorded fatalities in the Colombia ACLED Violence Against Civlians Dataset")
+  
+#OR 
+civ_violence_col %>%
+  ggplot(aes(x = fatalities)) + 
+  geom_bar() + 
+  ylim(0, 5000)+
+  labs(x = "Number of Fatalities Recorded", y = "Frequency",
+       title = "Frequency of Recorded Fatalities", 
+       subtitle="Histogram of recorded fatalities in the Colombia ACLED Violence Against Civlians Dataset")
+
+
+```
+
+# ... what if we want to add more? 
+
+Ok, I lied about ditching `dplyr`, here we will go into how to integrate the `dplyr` with `ggplot2`. 
+
+```{r}
+civ_violence_col %>% # start with data
+  ggplot(aes(y = fatalities, x = year)) + # specify data to be plotted 
+    geom_col() # specify the type of geometric layer to apply 
+
+# let's check this against what we would expect 
+
+civ_violence_col %>% 
+  group_by(year) %>%
+  summarize(sum_fatalities = sum(fatalities, na.rm =T))
+
+# let's try a different geom_layer 
+
+civ_violence_col %>% 
+  ggplot(aes(x = as_factor(year), y = fatalities)) + 
+  geom_line()
+
+# not great, why? because ggplot is working with the raw data not a summary data. 
+# need to figure out how to feed it what we want to see 
+
+# HERE IS WHERE WE INTEGRATE DPLYR WITH TIDYVERSE 
+
+civ_violence_col %>% 
+  group_by(year) %>%  # manipulate our data starting here with group_by 
+  summarize(sum_fatalities = sum(fatalities, na.rm =T)) %>% # summarize the data into what we want 
+  ggplot(aes(x = year, y = sum_fatalities)) + # map out the plot using the summary we created above 
+  geom_line()
+
+# but, what's misleading about this ^ ? 
+
+
+# can alter the axis! 
+# notice how this follows that grammar we discussed in the slides 
+
+civ_violence_col %>% 
+  group_by(year) %>% 
+  summarize(sum_fatalities = sum(fatalities, na.rm =T)) %>% 
+  ggplot(aes(x = year, y = sum_fatalities)) + 
+  geom_line() + 
+  ylim(0,2000)
+
+# what if we wanted to add more information
+
+# let's try to see what this looks like by department (the equivalent of a state in Colombia)
+
+civ_violence_col %>% 
+  group_by(year, admin1) %>% 
+  summarize(sum_fatalities = sum(fatalities, na.rm =T)) %>% 
+  ggplot(aes(x = year, y = sum_fatalities, color = admin1)) + 
+  geom_line() + 
+  ylim(0,2000)
+
+# kind of messy /:
+
+# let's think of a better way
+
+civ_violence_col %>% 
+  group_by(admin1) %>% 
+  summarize(sum_fatalities = sum(fatalities, na.rm =T)) %>% 
+  ggplot(mapping=aes(x=sum_fatalities, y= reorder(admin1, sum_fatalities))) + 
+  geom_point()
+
+civ_violence_col %>% 
+  group_by(year, admin1) %>% 
+  summarize(sum_fatalities = sum(fatalities, na.rm =T)) %>% 
+  ggplot(mapping=aes(x=sum_fatalities, y= reorder(admin1, sum_fatalities), color = as_factor(year))) + 
+  geom_point()
+```
+
+These are not great examples following what we know about visualization practices. But does it make sense wehre we are going with ggplot? 
+
+Let's keep going. 
+
+I, nor many other people, cannot just name off all of the geom layers that exist. Instead, it's better to have a resource of where to find them, like [this page](https://ggplot2.tidyverse.org/reference). 
+
+
+We already covered geom_bar, geom_col, geom_line, geom_dot... What are some other well suited things for the **univariate case**? What about the **bivariate** or **multivariate** case?? 
+
+Let's practice a few more. Doesn't have to be as complicated above, but we can just feel out a few more examples. 
+
+What about a boxplot of the fatalities variable? 
+
+```{r}
+civ_violence_col %>%
+  ggplot(aes(x = fatalities)) + 
+  geom_boxplot()
+
+# now let's make it over the years 
+
+civ_violence_col %>%
+  ggplot(aes(x = fatalities, y= as_factor(year))) + 
+  geom_boxplot()
+
+# let's compare this to geom_count()
+civ_violence_col %>%
+  ggplot(aes(x = fatalities, y= as_factor(year))) + 
+  geom_count()
+
+# or add a different specification 
+civ_violence_col %>%
+  ggplot(aes(x = fatalities, y= admin1)) + 
+  geom_count()
+
+# can also compare to a violin plot 
+
+civ_violence_col %>%
+  ggplot(aes(x = fatalities, y= as_factor(year))) + 
+  geom_violin()
+
+# let's add more information 
+
+civ_violence_col %>%
+  ggplot(aes(x = fatalities, y= admin1, color = as_factor(year))) +   geom_violin()
+```
+
+There is lots of information to be added in the `aes()` mapping specification. Variables, groups, colors, fills. We will continue to play around with this. 
+

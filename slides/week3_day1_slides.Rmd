@@ -1,0 +1,63 @@
+---
+title: "Basic Data Viz Theory and `ggplot2`basics"
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output: beamer_presentation
+---
+## --- 
+
+![](~/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/images/reagan.png)
+
+## What do we know *already?* 
+
+- How can we think through mapping out what we already know about data analysis and graphics and how that translates into a "theory" of data viz? 
+
+- We can even get into thinking technically along the lines of probability and statistical distributions (i.e. in terms of random variables). 
+
+- Should also think through what *unit of analysis* our data are in and how we might have to transform that. 
+
+## Let's try to dissect these:
+
+What are the *variables* displayed? 
+
+![From Cleveland and McGill (1985)](~/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/images/ClevelandMcGill.png)
+
+## --- 
+
+And [\color{blue}{this one}](https://pudding.cool/2017/03/film-dialogue/)? 
+
+## --- 
+
+And [\color{blue}{this one}](https://archive.nytimes.com/www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html?)? 
+
+## Tables are also a form of data viz, why not use them? 
+
+## Why does this matter? 
+
+- Some graphics packages in other more viz forward platforms make it incredibly easy to just point and click through what you want to put together in a graphic. (With limitations!!!)
+
+- `ggplot2` requires that we think a little more carefully about what we put together. Because of the way that our code layers... But this is for the better. 
+
+## Anatomy of a `ggplot2` call 
+\small 
+- Any visualization starting out in `ggplot2` mirrors the same way we were thinking of `dplyr`. Our data are the base. \centering 
+![From [here](https://devopedia.org/images/article/47/9630.1526004981.png)](~/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/images/ggplot2.png)
+
+## Codetalk 
+
+Additive code create exactly what we want our graph to be. It's called *declarative design*. 
+
+```{r, eval=F}
+
+some_data %>% # feed in the data 
+  ggplot(aes(x = x_var, y = y_var)) + 
+  # make the initial aesthetic spec 
+  geom_function() + 
+  # specify the geometric design 
+  facet_wrap(~z_var) 
+# optional specification of a facet 
+  
+#... and so on 
+```
+
+## Now let's make this concrete. 
