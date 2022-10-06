@@ -1,0 +1,176 @@
+---
+title: '`ggplot2`, pt. 2'
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    df_print: paged
+---
+# Getting Started 
+
+We are going to go through a workflow today to practice working with version control and saving from R directly. First, start a new project in your computer's local folder for this class. Call the R project _*anes_survey_work*_.
+
+When you are in the project let's open an R script. Your working directory *should* be now set to whatever file you set as the path for your R project. So, it should be the file for this class. We can check this. So long as it's what we expected, we can just move along. 
+
+```{r, eval = T, echo = F, results = 'hide'}
+
+getwd()
+
+```
+
+What's next when we *VERY* first set out an R script? 
+
+```{r, eval = T, echo = F, results = 'hide'}
+# PACKAGES!!! 
+library(tidyverse)
+library(ggthemes)
+library(fauxnaif)
+library(patchwork)
+
+# and the data next!
+anes2020 <- read_csv('https://raw.githubusercontent.com/sarah-moore/lousy-graphs/main/data/2020_ANES.csv')
+glimpse(anes2020)
+#8,280 observations over 1,771 columns 
+```
+
+Let's pick at max six variables that we want to work with just so that we don't have to get used to too much at once. 
+
+How about these: 
+
+a. **V200001**: Case ID 
+
+b. **V201028**: Did the respondent vote for president
+
+-9. Refused 
+
+-1. Inapplicable 
+
+1. Yes 
+
+2. No
+  
+c. **V202024**: Has respondent gotten into a political argument in past 12 months
+
+  -9. Refused 
+  
+  -7. Incomplete interview 
+  
+  -6. No post-election interview 
+  
+  1. Yes 
+  
+  2. No 
+
+d. **V202025**: Has respondent joined a protest march, rally, or demonstration in past 12 months 
+
+  -9. Refused 
+  
+  -7. Incomplete interview
+  
+  -6. No post-election interview 
+  
+  1. Yes
+  
+  2. No 
+  
+e. **V201014e**: Party registration in state of voter registration 
+
+  -1. Inapplicable 
+  
+  0. No party registration 
+  
+  1. Party registration 
+  
+f. **V201115**: How hopeful respondent feels about how things are going in the country
+
+  -9. Refused
+  
+  -8. Don't know 
+  
+  1. Not at all
+  
+  2. A little 
+  
+  3. Somewhat
+  
+  4. Very 
+  
+  5. Extremely 
+
+g. **V201600**: Respondent sex 
+
+-9. Refused 
+
+1. Male 
+
+2. Female 
+
+Based on these variables we want to work with, subset them using `select()` and get rid of all the unwanted values. Give them new names on the way. 
+
+```{r}
+# subset 
+anes2020 %>% 
+  select(resp_id = V200001, 
+         resp_pres_vote = V201028, 
+         resp_pol_argument = V202024, 
+         resp_part_protest = V202025, 
+         resp_state_reg = V201014e, 
+         resp_hopeful = V201115, 
+         resp_sex = V201600) -> anes_sub
+  
+anes_sub
+
+# figure out which values we need to rid ourselves of 
+bad_values <- c(-1, -2, -5, -6, -7, -8, -9)
+
+# use some fancy tricks and a new function to get the bad values out 
+anes_sub %>%
+  mutate(across(everything(), na_if_in, bad_values))-> anes_clean_sub
+
+# then we can check if those values are indeed gone! 
+any(anes_clean_sub[anes_clean_sub<0])
+
+any(bad_values %in% anes_clean_sub)
+```
+
+# What kinds of questions might motivate looking at these variables? 
+
+# What kinds of variables are these??? 
+
+- Out of the `geom` functions [here](https://ggplot2-book.org/individual-geoms.html), which make sense to use for univariate description?
+
+- What about [bivariate or multivariate](https://ggplot2-book.org/collective-geoms.html)?
+
+Using one of these ideas let's build from the bottom up. 
+
+```{r, include= T, eval = F}
+# let's start with the data. 
+
+# now we map our x (and/or) y aesthetics, sometimes more if we want 
+
+# let's set a geom_ layer 
+                        #-> new_plot 
+# now run the code together!! and assign it a name 
+
+# and now we'll save it 
+
+ggsave("name_here.png", new_plot)
+```
+
+That was pretty basic, let's try a new variable(s) with a different `geom` function. PLUS add labels to the axes and let's change the colors 
+
+```{r, include= T, eval = F}
+# data 
+
+# aes()
+
+# geom_function() 
+
+# labs()
+
+# scale_brewer_manual()
+               #-> new_plot2 
+
+ggsave("name_here2.png", new_plot2)
+```
+

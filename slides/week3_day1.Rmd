@@ -178,7 +178,7 @@ civ_violence_col %>%
 civ_violence_col %>% 
   group_by(year, admin1) %>% 
   summarize(sum_fatalities = sum(fatalities, na.rm =T)) %>% 
-  ggplot(mapping=aes(x=sum_fatalities, y= reorder(admin1, sum_fatalities), color = as_factor(year))) + 
+  ggplot(mapping=aes(x=sum_fatalities, y= reorder(admin1, sum_fatalities), color = year)) + 
   geom_point()
 ```
 
