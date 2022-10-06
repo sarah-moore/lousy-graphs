@@ -174,3 +174,50 @@ That was pretty basic, let's try a new variable(s) with a different `geom` funct
 ggsave("name_here2.png", new_plot2)
 ```
 
+
+Now we'll step away from these plots to check that they both made it to the specified folder. So long as they did, let's open up GitHub Desktop. If this folder you are working with is not yet a GH repo, let's make it one. If it is already, let's make a commit and a push to get these new images up on your GH repo. 
+
+So long as the repo exists, you should see these images added in GH Desktop. Make a comment like "adding new plots" to the *Summary* and then commit the change. Then push it to the remote repo. 
+
+Check your GH online repo to see if the push made it to the final destination. If all is good let's continue to move through some additional visualizations. 
+
+Let's try a visualization that has some summary statistics in it. We'll have to think carefully about our *scale*. 
+
+```{r}
+
+anes_clean_sub$resp_pres_vote <- if_else(anes_clean_sub$resp_pres_vote== 2, 0, anes_clean_sub$resp_pres_vote)
+
+anes_clean_sub %>% 
+  filter(!is.na(resp_sex), !is.na(resp_state_reg)) %>% 
+  ggplot(aes(y = resp_pres_vote, x =as_factor(resp_sex))) + 
+  geom_point(stat = "summary", fun = "mean") + 
+  ylim(0,1) + 
+  facet_wrap(~resp_state_reg) 
+# let's add labels here 
+
+anes_clean_sub %>% 
+  filter(!is.na(resp_sex), !is.na(resp_pol_argument)) %>% 
+  ggplot(aes(y = resp_pres_vote, x =as_factor(resp_sex))) + 
+  geom_point(stat = "summary", fun = "mean") + 
+  ylim(0,1) + 
+  facet_wrap(~resp_pol_argument) -> pol_argument_gg
+
+
+anes_clean_sub %>% 
+  filter(!is.na(resp_sex), !is.na(resp_pol_argument)) %>% 
+  ggplot(aes(y = resp_pres_vote, x =as_factor(resp_sex))) + 
+  geom_point(stat = "summary", fun = "mean") + 
+  ylim(0,1) + 
+  facet_wrap(~resp_pol_argument) -> pol_argument_gg
+
+anes_clean_sub %>% 
+  filter(!is.na(resp_sex), !is.na(resp_part_protest)) %>% 
+  ggplot(aes(y = resp_pres_vote, x =as_factor(resp_sex))) + 
+  geom_point(stat = "summary", fun = "mean") + 
+  ylim(0,1) + 
+  facet_wrap(~resp_part_protest) -> pol_protest_gg
+# let's add labels 
+
+
+pol_argument_gg + pol_protest_gg 
+```
