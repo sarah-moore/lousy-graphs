@@ -23,6 +23,8 @@ What's next when we *VERY* first set out an R script?
 ```{r, eval = T, echo = F, results = 'hide'}
 # PACKAGES!!! 
 library(tidyverse)
+# install.packages("fauxnaif", dep = T)
+# install.packages(c('ggthemes', "fauxnaif", "patchwork"))
 library(ggthemes)
 library(fauxnaif)
 library(patchwork)
@@ -118,7 +120,7 @@ anes2020 %>%
          resp_hopeful = V201115, 
          resp_sex = V201600) -> anes_sub
   
-anes_sub
+dim(anes_sub)
 
 # figure out which values we need to rid ourselves of 
 bad_values <- c(-1, -2, -5, -6, -7, -8, -9)
@@ -128,7 +130,7 @@ anes_sub %>%
   mutate(across(everything(), na_if_in, bad_values))-> anes_clean_sub
 
 # then we can check if those values are indeed gone! 
-any(anes_clean_sub[anes_clean_sub<0])
+any(anes_clean_sub[anes_clean_sub < 0])
 
 any(bad_values %in% anes_clean_sub)
 ```
@@ -145,11 +147,15 @@ Using one of these ideas let's build from the bottom up.
 
 ```{r, include= T, eval = F}
 # let's start with the data. 
-
+anes_clean_sub %>% 
+  filter(!is.na(resp_pol_argument))%>% 
 # now we map our x (and/or) y aesthetics, sometimes more if we want 
-
+ggplot(aes(x = as_factor(resp_pol_argument))) + 
+  geom_bar() + 
+  ylim(0, 8280) + 
+  scale_x_discrete(breaks = c("Yes" = 1, "No" = 2))
 # let's set a geom_ layer 
-                        #-> new_plot 
+
 # now run the code together!! and assign it a name 
 
 # and now we'll save it 
@@ -202,14 +208,6 @@ anes_clean_sub %>%
   ylim(0,1) + 
   facet_wrap(~resp_pol_argument) -> pol_argument_gg
 
-
-anes_clean_sub %>% 
-  filter(!is.na(resp_sex), !is.na(resp_pol_argument)) %>% 
-  ggplot(aes(y = resp_pres_vote, x =as_factor(resp_sex))) + 
-  geom_point(stat = "summary", fun = "mean") + 
-  ylim(0,1) + 
-  facet_wrap(~resp_pol_argument) -> pol_argument_gg
-
 anes_clean_sub %>% 
   filter(!is.na(resp_sex), !is.na(resp_part_protest)) %>% 
   ggplot(aes(y = resp_pres_vote, x =as_factor(resp_sex))) + 
@@ -218,6 +216,7 @@ anes_clean_sub %>%
   facet_wrap(~resp_part_protest) -> pol_protest_gg
 # let's add labels 
 
+pol_argument_gg + pol_protest_gg -> argument_protest_gg 
 
-pol_argument_gg + pol_protest_gg 
+ggsave("argument_protest.png", argument_protest_gg)
 ```
