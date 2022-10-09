@@ -6,7 +6,7 @@ output: html_document
 
 # Exercises Feed
 
-These exercises will be ungrades opportunities for you to continue to build your R skills. If you spend about 45 min to 1 hour on these skills weekly, you'll find your abilities will improve dramatically very quickly.
+These exercises will be ungraded opportunities for you to continue to build your R skills. If you spend about 45 min to 1 hour on these skills weekly, you'll find your abilities will improve dramatically very quickly.
 
 [Week 1](01_exercise.html)
 
