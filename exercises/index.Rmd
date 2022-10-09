@@ -13,3 +13,5 @@ These exercises will be ungrades opportunities for you to continue to build your
 [Week 2](02_exercise.html)
 
 [Week 3](03_exercise.html)
+
+[Week 4](04_exercise.html)
