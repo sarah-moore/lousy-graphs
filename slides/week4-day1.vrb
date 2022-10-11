@@ -1,0 +1,20 @@
+\frametitle{Color to highlight}
+\protect\hypertarget{color-to-highlight}{}
+\begin{itemize}
+\item
+  Sometimes the questions that we address in social science and data
+  visualization are about key groups within a category.
+\item
+  Finding a way to highlight those key categories amid the rest of the
+  data can be important to show viewers the trends among that key
+  category within the full data. In this case, we want to
+  \textbf{accent} our key category, without implanting color for all
+  categories in the data.
+\end{itemize}
+
+\begin{verbatim}
+## Warning: Tried to calculate with group_by(), but the calculation failed.
+## Falling back to ungrouped filter operation...
+\end{verbatim}
+
+\includegraphics{week4-day1_files/figure-beamer/unnamed-chunk-9-1.pdf}
