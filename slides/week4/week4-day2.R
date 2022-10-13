@@ -19,7 +19,7 @@ fox_graph %>%
   geom_bar(stat = "identity", fill = "yellow") +
   coord_cartesian(ylim=c(100, 110)) + 
   geom_label(aes(label = labels), size = 4, 
-            hjust = -1.15, vjust = 1.4)+ 
+             hjust = -1.15, vjust = 1.4)+ 
   labs(x = "", y = "", title = "WELFARE VS. FULL TIME JOBS") + 
   theme(rect = element_rect(fill = "darkgreen"),
         panel.background = element_rect(fill = "darkgreen"),
@@ -96,7 +96,7 @@ names(hdi_long)
 hdi_long %>% 
   filter(!is.na(value), region!="") %>%
   ggplot(aes(x = value, y = reorder(region, value))) + 
-  geom_point(stat = "summary", fun = "mean")
+  geom_point(stat = "summary", fun = "mean") -> hdi_overall
 
 
 # install.packages("stringr")
@@ -104,12 +104,14 @@ library(stringr)
 hdi_long$year <- as.numeric(str_sub(hdi_long$variable, start= -4))
 
 hdi_long %>% 
-  filter(!is.na(value), region!="") %>%
+  filter(!is.na(value), region=="EAP") %>%
   ggplot(aes(y = value, x = year, color = country)) + 
-  geom_jitter(alpha = 0.45) + 
+  geom_jitter(alpha = 0.45)  + 
   facet_wrap(~region) +
-  theme(legend.position = "none")
+  theme(legend.position = "none") -> hdi_EAP
 
 
 # install.packages("gridExtra")
+library(gridExtra)
 
+grid.arrange(hdi_overall, hdi_EAP, ncol = 2)
