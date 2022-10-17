@@ -1,0 +1,57 @@
+---
+title: "Week 5, Day 1"
+subtitle: "Motivating Design Choices: Making Things More Clear" 
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output:  
+  beamer_presentation:
+    theme: "Madrid"
+    colortheme: "dolphin"
+
+header-includes: 
+- \usepackage{soul}
+- \usepackage[T1]{fontenc}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{graphicx}
+- \usepackage{tikz}
+- \usepackage{tkz-fct}   
+- \usepackage{comment}
+- \usepackage{filecontents}
+- \usepackage{xcolor,colortbl}
+- \setbeamertemplate{navigation symbols}{}
+---
+
+# Agenda for today 
+
+- Last week we tried to think through some actual applied rules for mapping visualizations and when certain things work (or don't). 
+
+- 
+
+# Revisiting our directory\footnote{Adapted from Wilke ch. 5} 
+
+\small 
+
+\begin{table}
+\centering
+\begin{tabular}{|l|p{0.5\textwidth}|}
+\hline 
+\textbf{Type of Information} & \textbf{Suggested Visualization}\\ 
+\hline
+Amounts & bars, dots, heatmap \\
+\hline 
+Distributions & histogram, density plot, qq-plot, boxplot, violin plot, strip chart\\
+\hline 
+Proportions & bars, density plot, mosaiac plot, treemap, parallel set \\
+\hline
+Relations & scatterplot, bubblechart, slopegraph, contour plot, bins, correlogram, line graph \\
+\hline
+\end{tabular}
+\end{table}
+
+>- Each of these suggestions can be further modified to be inclusive of more information, by stacking, grouping, faceting, adding information on uncertainty, or changing coordinate systems. 
+
+>- \color{purple}Under what circumstances do we need a **legend** or **labels** for each of these? Is there some sort of uniform need for either? 
+
+
+
