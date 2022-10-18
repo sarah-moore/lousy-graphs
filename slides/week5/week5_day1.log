@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.10)  13 OCT 2022 19:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.17)  18 OCT 2022 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,24 +901,24 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 )) (./week5_day1.aux)
 \openout1 = `week5_day1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
-LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -959,53 +959,53 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 110.
+Package hyperref Info: Link coloring OFF on input line 123.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 110.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 110.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 110.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 110.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 123.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 110.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 110.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 110.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 110.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 110.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 110.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 110.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 110.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 123.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 110.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 110.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 110.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 123.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 110.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 110.
+(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 110.
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 110.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 110.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 123.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 110.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 123.
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1023,82 +1023,192 @@ Dictionary: translator-theorem-dictionary, Language: English
 (./week5_day1.nav) [1
 
 {/Users/sarahmoore/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 150.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 139.
+[2
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 178.
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 150.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 178.
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 150.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 178.
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 150.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 178.
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 150.
+(Font)              <10> on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 150.
+(Font)              <7> on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 150.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 150.
+(Font)              <5> on input line 178.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 178.
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 150.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 178.
 (/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 150.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 178.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 150.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 178.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 150.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 178.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/lmss/m/n/10 scatterplot, bub-blechart, slope-graph,
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 150--150
+Underfull \hbox (badness 2012) in paragraph at lines 178--178
 \T1/lmss/m/n/10 con-tour plot, bins, cor-rel-o-gram, line
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 150.
+(Font)              <14.4> on input line 178.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 150.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 150.
+(Font)              <9> on input line 178.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 150.
+(Font)              <6> on input line 178.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 150.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 178.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 150.
-[2
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 178.
+[3
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{revisiting-our-directory}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 \end{frame}
+l.178 \end{frame}
                  
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/lmss/m/n/10 scatterplot, bub-blechart, slope-graph,
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 150--150
+Underfull \hbox (badness 2012) in paragraph at lines 178--178
 \T1/lmss/m/n/10 con-tour plot, bins, cor-rel-o-gram, line
  []
 
-[3
+[4
+
+] [5
+
+] [6
+
+] [7
+
+]
+<week5_day1_files/figure-beamer/unnamed-chunk-2-1.pdf, id=96, 722.7pt x 505.89pt>
+File: week5_day1_files/figure-beamer/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use week5_day1_files/figure-beamer/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: week5_day1_files/figure-beamer/unnamed-chunk-2-1.pdf  used on input line 226.
+(pdftex.def)             Requested size: 342.29358pt x 239.6055pt.
+
+Overfull \vbox (2.99884pt too high) detected at line 226
+ []
+
+[8
+
+ <./week5_day1_files/figure-beamer/unnamed-chunk-2-1.pdf>]
+<week5_day1_files/figure-beamer/unnamed-chunk-3-1.pdf, id=109, 722.7pt x 505.89pt>
+File: week5_day1_files/figure-beamer/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use week5_day1_files/figure-beamer/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: week5_day1_files/figure-beamer/unnamed-chunk-3-1.pdf  used on input line 231.
+(pdftex.def)             Requested size: 342.29358pt x 239.6055pt.
+
+Overfull \vbox (2.99884pt too high) detected at line 231
+ []
+
+[9
+
+ <./week5_day1_files/figure-beamer/unnamed-chunk-3-1.pdf>]
+<week5_day1_files/figure-beamer/unnamed-chunk-4-1.pdf, id=122, 722.7pt x 505.89pt>
+File: week5_day1_files/figure-beamer/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use week5_day1_files/figure-beamer/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: week5_day1_files/figure-beamer/unnamed-chunk-4-1.pdf  used on input line 236.
+(pdftex.def)             Requested size: 342.29358pt x 239.6055pt.
+
+Overfull \vbox (2.99884pt too high) detected at line 236
+ []
+
+[10
+
+ <./week5_day1_files/figure-beamer/unnamed-chunk-4-1.pdf>] [11
+
+]
+<franconeri.png, id=142, 264.99pt x 343.2825pt>
+File: franconeri.png Graphic file (type png)
+<use franconeri.png>
+Package pdftex.def Info: franconeri.png  used on input line 268.
+(pdftex.def)             Requested size: 160.8552pt x 208.38058pt.
+
+Overfull \vbox (27.31836pt too high) detected at line 268
+ []
+
+[12
+
+ <./franconeri.png>]
+\openout4 = `week5_day1.vrb'.
+
+(./week5_day1.vrb
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 14.
+(/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) [13
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 293.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 293.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 293.
+[14
+
+] [15
+
+]
+\openout4 = `week5_day1.vrb'.
+
+(./week5_day1.vrb) [16
+
+]
+<titanic.png, id=213, 763.85374pt x 444.66125pt>
+File: titanic.png Graphic file (type png)
+<use titanic.png>
+Package pdftex.def Info: titanic.png  used on input line 333.
+(pdftex.def)             Requested size: 308.0653pt x 179.33368pt.
+[17
+
+ <./titanic.png>]
+\openout4 = `week5_day1.vrb'.
+
+(./week5_day1.vrb) [18
+
+] [19
+
+]
+Underfull \hbox (badness 2951) in paragraph at lines 385--385
+[]|\T1/lmss/m/n/10.95 bars, den-sity plot, mo-sa-iac plot,
+ []
+
+[20
+
+] [21
 
 ]
 \tf@nav=\write6
@@ -1112,18 +1222,18 @@ Underfull \hbox (badness 2012) in paragraph at lines 150--150
 
 (./week5_day1.aux) ) 
 Here is how much of TeX's memory you used:
- 32404 strings out of 477031
- 678584 string characters out of 5827042
- 971472 words of memory out of 5000000
- 52766 multiletter control sequences out of 15000+600000
- 537739 words of font info for 78 fonts, out of 8000000 for 9000
+ 32771 strings out of 477031
+ 686939 string characters out of 5827042
+ 971504 words of memory out of 5000000
+ 53057 multiletter control sequences out of 15000+600000
+ 556796 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,15n,111p,435b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss12.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss9.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on week5_day1.pdf (3 pages, 106896 bytes).
+ 99i,15n,111p,435b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss12.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss9.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on week5_day1.pdf (21 pages, 342688 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
