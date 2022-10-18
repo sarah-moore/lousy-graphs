@@ -37,7 +37,6 @@ hdi_gni_wide %>%
 
 
 hdi_gni_wide <- hdi_gni_wide %>%
-  # Rename 4 to 4wd, f to Front, r to Rear
   mutate(median_gii = recode(median_gii, 
                              "0" = "Below Median GII", 
                              "1"= "Above Median GII"), 
@@ -81,3 +80,11 @@ hdi_gni_wide %>%
   labs(y = "Human Development Index (HDI)", x = "World Region", 
        title = "Human Development Index, 1990-2021 by World Region")+ 
   scale_color_discrete(name = "Median GNI")
+
+hdi_gni_wide %>%
+  filter(region == "AS") %>%
+  ggplot(aes(y = hdi, x = country, label = country)) + 
+  geom_label(aes(label = country))-> p
+
+p + transition_time(year) +
+  labs(title = "Year: {frame_time}") 
