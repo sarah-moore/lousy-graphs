@@ -30,4 +30,4 @@ obs_time %>%
 
 plot_time + transition_reveal(year)-> transition_plot
 
-anim_save("images/transition_plot", transition_plot)
+anim_save("images/transition_plot.gif", transition_plot)
