@@ -5,6 +5,8 @@ packages <- c("tidyverse", "reshape2", "fauxnaif", "gganimate", "ggthemes",
 lapply(packages, require, character.only = TRUE)
 loadfonts(device = "all")
 
+paletteer_d(`"peRReo::rosalia"`)
+
 bigfoot <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-13/bigfoot.csv")
 ############################
 
@@ -93,9 +95,9 @@ bigfoot %>%
   filter(season!= "Unknown") %>%
   ggplot(aes(y = uv_index, x = season, fill = season))+ 
   geom_boxplot(alpha = 1) +
-  geom_hline(yintercept = mean(bigfoot$uv_index, na.rm= T), 
+  geom_hline(yintercept = mean(bigfoot$uv_index, na.rm = T), 
              color = "black", 
-             lty = "dotted", lwd = 2)+ 
+             lty = "dotted", lwd = 2)+  #line type, line width 
   scale_fill_paletteer_d("lisa::FernandoBotero", name = "Season") +
   scale_y_continuous(breaks = seq(0, 13, 3) )+
   labs(y = "Recorded UV Index at\nTime of Bigfoot Sighting", 
