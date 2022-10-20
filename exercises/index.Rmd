@@ -17,3 +17,7 @@ These exercises will be ungraded opportunities for you to continue to build your
 [Week 4](04_exercise.html)
 
 [Animation!](gganimate_tutorial.R)
+
+And here I have embdedded the animated visualization: 
+
+![Here is an image on the reported sightings of Bigfoot in the US over time.](transition_plot.gif) 
