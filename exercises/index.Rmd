@@ -15,3 +15,5 @@ These exercises will be ungraded opportunities for you to continue to build your
 [Week 3](03_exercise.html)
 
 [Week 4](04_exercise.html)
+
+[Animation!](gganimate_tutorial.R)
