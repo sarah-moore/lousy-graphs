@@ -138,8 +138,8 @@ Skim:
 - Readings
   
   - Harrison et al. (2013) ["Influencing Visual Judgment through Affective Priming"](https://dl.acm.org/doi/pdf/10.1145/2470654.2481410)
-  - Goldstein and Rothschild (2014) ["Lay Understanding of Probability Distributions"](https://journal.sjdm.org/13/131029/jdm131029.pdf) 
   - Wilke, [Chapter 16](https://clauswilke.com/dataviz/visualizing-uncertainty.html) 
+  - D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
 
 ### Thursday, 10/27: Lab Session 6 
 
