@@ -139,7 +139,7 @@ Skim:
   
   - Harrison et al. (2013) ["Influencing Visual Judgment through Affective Priming"](https://dl.acm.org/doi/pdf/10.1145/2470654.2481410)
   - Wilke, [Chapter 16](https://clauswilke.com/dataviz/visualizing-uncertainty.html) 
-  - D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
+  
 
 ### Thursday, 10/27: Lab Session 6 
 
@@ -185,6 +185,8 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
    - Scheller (2019) ["Our favorite Pew Research Center data visualizations of 2019"](https://www.pewresearch.org/fact-tank/2019/12/30/our-favorite-pew-research-center-data-visualizations-of-2019/) 
 
+- D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
+
 ### Thursday, 11/10: Lab Session 8 
 
 - Visualizing qualitative data 
@@ -196,10 +198,6 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 **Short Form Blog 2 Due 11/14 at 11:59** 
 
 ### Tuesday, 11/15: Big Data, Missing Data, and Other Miscellaneous Problems 
-
-- Readings:
-
-   - D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
    
 
 ### Thursday, 11/17: Lab Session 9 
