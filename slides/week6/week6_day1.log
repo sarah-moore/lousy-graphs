@@ -1081,4 +1081,84 @@ Package amsmath Warning: Foreign command \over;
 File: trafalgar_pct.png Graphic file (type png)
 <use trafalgar_pct.png>
 Package pdftex.def Info: trafalgar_pct.png  used on input line 304.
-(pdftex.def)             Requested size: 222.47981pt x 208.373
+(pdftex.def)             Requested size: 222.47981pt x 208.3738pt.
+[14
+
+ <./trafalgar_pct.png>]
+<trafalgar_full.png, id=159, 3011.25pt x 3011.25pt>
+File: trafalgar_full.png Graphic file (type png)
+<use trafalgar_full.png>
+Package pdftex.def Info: trafalgar_full.png  used on input line 311.
+(pdftex.def)             Requested size: 222.47981pt x 208.3738pt.
+[15
+
+ <./trafalgar_full.png>]
+<all_nm_polls.png, id=169, 3011.25pt x 3011.25pt>
+File: all_nm_polls.png Graphic file (type png)
+<use all_nm_polls.png>
+Package pdftex.def Info: all_nm_polls.png  used on input line 318.
+(pdftex.def)             Requested size: 222.47981pt x 208.3738pt.
+[16
+
+ <./all_nm_polls.png>] [17
+
+] [18
+
+]
+<illinois_recent_poll.png, id=192, 3011.25pt x 3011.25pt>
+File: illinois_recent_poll.png Graphic file (type png)
+<use illinois_recent_poll.png>
+Package pdftex.def Info: illinois_recent_poll.png  used on input line 361.
+(pdftex.def)             Requested size: 222.48988pt x 222.47981pt.
+[19
+
+ <./illinois_recent_poll.png>] [20
+
+]
+\openout4 = `week6_day1.vrb'.
+
+(./week6_day1.vrb
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7.
+(/Users/sarahmoore/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+]
+\tf@nav=\write5
+\openout5 = `week6_day1.nav'.
+
+\tf@toc=\write6
+\openout6 = `week6_day1.toc'.
+
+\tf@snm=\write7
+\openout7 = `week6_day1.snm'.
+
+(./week6_day1.aux) ) 
+Here is how much of TeX's memory you used:
+ 31635 strings out of 477031
+ 668300 string characters out of 5827042
+ 978098 words of memory out of 5000000
+ 51943 multiletter control sequences out of 15000+600000
+ 509954 words of font info for 58 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 99i,15n,111p,435b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss12.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/sarahmoore/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on week6_day1.pdf (27 pages, 910707 bytes).
+PDF statistics:
+ 333 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+
