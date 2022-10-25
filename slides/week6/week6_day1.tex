@@ -1,0 +1,481 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{Madrid}
+\usecolortheme{dolphin}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{tkz-fct}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Week 6, Day 1},
+  pdfauthor={Sarah Moore},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Week 6, Day 1}
+\subtitle{Two-Parter: Visualizing Uncertainty and Data Management
+Practices}
+\author{Sarah Moore}
+\date{2022-10-25}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Why do we need to account for uncertainty?}
+\protect\hypertarget{why-do-we-need-to-account-for-uncertainty}{}
+\begin{itemize}
+\item
+  The idea of a \emph{statistic} or some estimate is not only to say
+  something about that quantity for the sample of data, but also about
+  the population of interest.
+\item
+  We can think of the relationship of a sample and a population like an
+  overlapping circle.
+\end{itemize}
+
+\centering 
+\begin{tikzpicture}[][thick]
+   \draw (0,0) circle (1.8cm);
+   \draw (-0.75,0.45) circle (0.75cm);
+   \draw (-.75,0.45) node {sample};
+   \draw (0.3,-1) node {population};
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Population Inference}
+\protect\hypertarget{population-inference}{}
+\centering 
+\begin{tikzpicture}[][thick]
+   \draw (0,0) circle (1.8cm);
+   \draw (-0.75,0.45) circle (0.75cm);
+   \draw (-.75,0.45) node {sample};
+   \draw (0.3,-1) node {population};
+\end{tikzpicture}
+
+\begin{itemize}
+\item
+  Sampling: Allows us to capture some ``things'' in the sample to make
+  inferences about the greater body of ``things'' in the population.
+\item
+  Our inferences thus come with some uncertainty. Our knowledge about a
+  \emph{snippet} of the population cannot tell us, with 100 percent
+  certainty, the exact fact of the population.
+\item
+  Consequentially, much of statistics, and thus \emph{reporting
+  statistics}, relies on understanding how to account for uncertainty.
+\item
+  Our degree of uncertainty reflects the validity and potential
+  precision of the measurement of interest.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An easy example}
+\protect\hypertarget{an-easy-example}{}
+\begin{itemize}
+\tightlist
+\item
+  Polling Data
+\end{itemize}
+\end{frame}
+
+\begin{frame}{What is \emph{uncertainty}?}
+\protect\hypertarget{what-is-uncertainty}{}
+\end{frame}
+
+\begin{frame}{---}
+\protect\hypertarget{section}{}
+\begin{itemize}
+\item
+  In each of the visualizations that we have made so far, there is some
+  element of uncertainty around the quantity that we have visualized.
+\item
+  But, uncertainty does indeed exist across all data. Most reliably due
+  to this issue of population inference-- which is uncertainty we can
+  account for. Otherwise we have measurement error, sampling biases,
+  non-response, variation in sample sizes, etc.
+\item
+  If we can account for \emph{one} of these sources of uncertainty, then
+  we should do so!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Okay, but what does it matter?}
+\protect\hypertarget{okay-but-what-does-it-matter}{}
+\url{https://twitter.com/Brad_Setser/status/1584362527743672320}
+\end{frame}
+
+\begin{frame}{Ways that we see this}
+\protect\hypertarget{ways-that-we-see-this}{}
+\begin{itemize}
+\item
+  Margin of error, confidence intervals, or standard errors are the most
+  likely to be published in text. We can easily translate these from one
+  to another
+\item
+  Visually we are likely to encounter error bars, highlighted confidence
+  intervals, or some other sort of visual differentiation between a
+  given estimate and the surrounding potential range of values.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{What to expect here}
+\protect\hypertarget{what-to-expect-here}{}
+\begin{itemize}
+\item
+  All that to say, I don't us expect to learn everything in a day or
+  even a quarter of how to think of and understand statistical
+  uncertainty.
+\item
+  Instead, some methods of visualization and certain components of
+  ggplot2 make adding on uncertainty an easy thing to do.
+\item
+  Today's lesson is taken from
+  \href{https://clauswilke.com/dataviz/visualizing-uncertainty.html}{Wilke
+  Ch. 16}. Some of my code from today is thus adapted from a lot of the
+  ideas worked out in there, but with a different application.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Confidence Intervals}
+\protect\hypertarget{confidence-intervals}{}
+\begin{itemize}
+\item
+  We will encounter confidence intervals here (CIs for short). I'd like
+  for us to know how to interpret this correctly, especially related to
+  our confidence levels.
+\item
+  Confidence intervals specify a potential range of values for a
+  potential measurement of interest, given an associated confidence
+  level.
+\end{itemize}
+
+\[CI = \text{Measurement} \pm MoE  = [\text{Upper Bound, Lower Bound}]\]
+
+\begin{itemize}
+\tightlist
+\item
+  Where the \textbf{Margin of Error (MoE)} is the standard error
+  (\(\sigma\over\sqrt{n}\)) multiplied by the Z-or t-score relative to
+  the chosen confidence level (typically 95\%, but also 90\% and 99\%
+  possible).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interpreting a Confidence Interval}
+\protect\hypertarget{interpreting-a-confidence-interval}{}
+\begin{itemize}
+\item
+  The associated confidence level that we use to calculate the margin of
+  error \textbf{does not} mean: ``I am 95\% sure that the true
+  measurement lies within this CI.''
+\item
+  Rather the confidence interval states something like: ``If this
+  measurement were collected iteratively among different samples, around
+  95\% of those collected samples would also contain the true value upon
+  calculating a 95\% confidence interval.''
+\item
+  TBH the
+  \href{https://en.wikipedia.org/wiki/Confidence_interval}{Wikipedia on
+  Confidence Intervals} is pretty good in reframing the interpretation
+  in different ways.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Data Source}
+\protect\hypertarget{data-source}{}
+Today's data comes from FiveThirtyEight, specifically their current
+gubernatorial polling data. I have limited the subset to \emph{only}
+reflect New Mexico data for simplicity.
+
+\url{https://projects.fivethirtyeight.com/polls/governor/2022/new-mexico/}
+\end{frame}
+
+\begin{frame}{Probabilities and frequencies}
+\protect\hypertarget{probabilities-and-frequencies}{}
+\begin{itemize}
+\item
+  Probability, and thus uncertainty, can be made a bit more concrete
+  when we nest a particular outcome as a frequency or proportion.
+\item
+  We have already done this some with bar charts or histograms. But, we
+  can visualize this as an array.
+\item
+  If we visualize an anticipated outcome and its probability relative to
+  the other possible outcomes, this is called a \textbf{discrete outcome
+  visualization}.
+\item
+  To visualize probability as a likely frequency (e.g.~1 out of 100, 3
+  out of 40, etc.) is called frequency framing.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An example from current polling data:}
+\protect\hypertarget{an-example-from-current-polling-data}{}
+\centering
+
+\includegraphics[width=0.65\linewidth,height=0.8\textheight]{trafalgar_pct}
+\end{frame}
+
+\begin{frame}{Alternatively:}
+\protect\hypertarget{alternatively}{}
+\centering
+
+\includegraphics[width=0.65\linewidth,height=0.8\textheight]{trafalgar_full}
+\end{frame}
+
+\begin{frame}{And a different iteration, by pollster:}
+\protect\hypertarget{and-a-different-iteration-by-pollster}{}
+\centering
+
+\includegraphics[width=0.65\linewidth,height=0.8\textheight]{all_nm_polls}
+\end{frame}
+
+\begin{frame}{Representing uncertainty via discrete outcomes}
+\protect\hypertarget{representing-uncertainty-via-discrete-outcomes}{}
+\begin{itemize}
+\item
+  This usually works pretty good as long as we are scaling
+  appropriately. Can trade precision for interpretability's sake, but
+  NOT MUCH!
+\item
+  People do better at perceiving these types of visualizations so long
+  as the number is not \emph{too} great.
+\item
+  Possible to combine discrete outcome plots with a continuous
+  distribution, but limited utility for our data potentially? (Quantile
+  dotplot for those of you that are interested.) Can also be easily
+  taken as plotting a continuum, rather than discrete event
+  possibilities, therefore limiting their ease of interpretation.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Point Estimates}
+\protect\hypertarget{point-estimates}{}
+\begin{itemize}
+\item
+  We will get to this on Thursday, as it requires more calculation and R
+  manipulation.
+\item
+  We will revisit these w.r.t Illinois polling data instead.
+\item
+  But the concept instead is to provide the exact measurement available
+  with the data, then show the range of potential values
+\item
+  Could be mean, median, or the entire distribution that we can place a
+  potential interval around.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example with Illinois Polling Data}
+\protect\hypertarget{example-with-illinois-polling-data}{}
+\centering
+
+\includegraphics[width=0.65\linewidth]{illinois_recent_poll}
+\end{frame}
+
+\begin{frame}{Key Change: Data Management}
+\protect\hypertarget{key-change-data-management}{}
+What are best data management practices YOU ALL know of?
+
+I can wait\ldots{}
+\end{frame}
+
+\begin{frame}[fragile]{Data versions, saving data, sharing data, etc.}
+\protect\hypertarget{data-versions-saving-data-sharing-data-etc.}{}
+Let's rank order these data file names from BEST to WORST:
+
+\begin{enumerate}
+\item
+  \texttt{2018\ Survey\ from\ Afrobarometer.csv(download)}
+\item
+  \texttt{2021\_july21\_media\_survey\_PANEL.csv}
+\item
+  \texttt{22-08-31\_ColombiaStateCapacity\_Project2020v2.dta}
+\item
+  \texttt{ANES\_2018\_v3.dta}
+\item
+  \texttt{2022-subset:\ anes.csv}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Saving and re-saving data}
+\protect\hypertarget{saving-and-re-saving-data}{}
+\begin{enumerate}
+\item
+  \textbf{Date}
+\item
+  \textbf{Clear, concise names that identify the project and data type}
+\item
+  \textbf{Skip the strange characters and spaces in file names:}
+\item
+  \textbf{Version control}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{What about code?}
+\protect\hypertarget{what-about-code}{}
+\begin{itemize}
+\item
+  \emph{Annotated code is the best code!}
+\item
+  Everything else is not great :)
+\item
+  If I got locked out of this file for a year, what kind of signs would
+  I want to have left myself so I can continue on without problem?
+\item
+  Metaphor of parking on a downhill slope. I recommend the same for
+  writing.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sending code or troubleshooting}
+\protect\hypertarget{sending-code-or-troubleshooting}{}
+\begin{itemize}
+\item
+  Reprex
+\item
+  File paths
+\item
+  Error messages
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Structuring projects}
+\protect\hypertarget{structuring-projects}{}
+\begin{itemize}
+\item
+  Let me reiterate: R Projects
+\item
+  Adding more files seems cumbersome, but if we can manage chaos by
+  grouping together like things, then we make our project's lifelines
+  visible to US and everyone else.
+\item
+  If a stranger was to visit your project page, github repo, etc. would
+  they have to spend more than 2 minutes looking through it to
+  understand the structure?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Visualization Blog 2, next week :(}
+\protect\hypertarget{visualization-blog-2-next-week}{}
+\begin{itemize}
+\item
+  Will post by end of the day on Canvas.
+\item
+  Slight modification to original assignment-- I know y'all are tired
+  (so am I).
+\item
+  So, we'll do something a bit less intense.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Visualization Blog 2 Prompt:}
+\protect\hypertarget{visualization-blog-2-prompt}{}
+Two options:
+
+\begin{enumerate}
+[1)]
+\item
+  Make two original visualizations and figure out how to account for
+  uncertainty in them. Tell me how you calculated the uncertainty and
+  why you visualized uncertainty in this way. One of these
+  visualizations can come from one of your previous assignments.
+\item
+  Find two visualizations you really don't like and then turn them into
+  something better. Particularly, this improvement should reflect design
+  principles you like and that reflects this ``brand'' you have been
+  trying to build.
+\end{enumerate}
+
+\href{https://twitter.com/AlecStapp/status/1582704817612283904}{Here is
+a freebie.}
+\end{frame}
+
+\end{document}
