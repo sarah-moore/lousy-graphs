@@ -141,9 +141,10 @@ value <- c(rep("Mark V. Ronchetti", 47),
            rep(NA, 3))
 
 dummy_frame <-data.frame(dummy_frame, value)
+
 dummy_frame %>%
   filter(!is.na(value))%>%
-ggplot(aes(x= y, y= x, fill = value)) +
+ggplot(aes(x= y, y=x, fill = value)) +
   geom_tile(color = "white", size = 1) +
   coord_fixed(expand = FALSE, clip = "off") +
   scale_x_continuous(name = NULL, breaks = NULL) +
@@ -189,7 +190,6 @@ knitr::include_graphics("trafalgar_full.png")
 
 ```{r full_trafalgar, include = F, eval = F, warning=F}
 dummy_frame2<- expand.grid(x = 1:33, y = 1:33)
-
 
 value2 <- c(rep("Mark V. Ronchetti", 506), 
            rep("Michelle Lujan Grisham", 495), 
@@ -324,6 +324,9 @@ gov_poll <- read_csv("~/Library/CloudStorage/OneDrive-NorthwesternUniversity/Tea
 gov_poll %>% 
   filter(state == "Illinois") %>%
   select(poll_id, candidate_name, party, pct, sample_size, end_date)-> il_gov_poll
+
+
+
 
 il_gov_poll %>%
   filter(end_date == "10/15/22") %>% 
