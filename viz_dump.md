@@ -18,12 +18,13 @@ This week we are going over *just the basics* of data viz, so whatever visualiza
 
 ## Visualization Blog 2: Adding Uncertainty OR Making Your Brand   
 
-Two options for this go around: 
+Three options for this go around:
 
-1) Make two original visualizations and figure out how to account for uncertainty in them. Annotate in your R code HOW you calculated the uncertainty and why you visualized uncertainty in the chosen way. These visualizations can come from two of your previous assignments, but must rely on distinct functional arrangements, i.e. can't use the same `geom_()` function. 
+1. Make two original visualizations and figure out how to account for uncertainty in them. Annotate in your R code HOW you calculated the uncertainty and why you visualized uncertainty in the chosen way. These visualizations can come from two of your previous assignments, but must rely on distinct functional arrangements, i.e. can't use the same `geom_()` function.
 
-2) Find two visualizations you really don't like and then turn them into something better. Particularly, this improvement should reflect design principles we have talked about as crucial, the optional stuff you like, and arrangements that reflect a "brand" you have been trying to build. 
+2. Find two visualizations you really don't like and then turn them into something better. Particularly, this improvement should reflect design principles we have talked about as crucial, the optional stuff you like, and arrangements that reflect a "brand" you have been trying to build.
 
+3. Do two visualizations: one along the lines of (1) above and the other along the lines of (2).
 
 ## Visualization Blog 3: Interactive Visualizations, Big Data, and Qualitative Data 
 
