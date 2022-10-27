@@ -1,0 +1,15 @@
+\frametitle{Formulae}
+\protect\hypertarget{formulae}{}
+Sample Standard Deviation of Mean \(s\):
+
+\[s = \sqrt{\frac{\Sigma^N_{i=1}(x_i-\bar x)^2}{n-1}}\] where the
+numerator is the squared sum of differences between each observation
+\(x_i\) of the variable of interest and the variable's mean
+(\(\bar x\)). The denominator is the number of observations \(n\) minus
+1. Easily done in R by \texttt{sd(var,\ na.rm\ =\ T)}.
+
+Sample Standard Deviation of Proportion \(s\):
+
+\[s = \sqrt{\hat \pi(1-\hat \pi)}\]
+
+Where \(\hat \pi\) is the sample proportion.
