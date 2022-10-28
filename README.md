@@ -79,17 +79,17 @@ Not graded, but highly encouraged to stay up with the needs of the class.
 
 ## Assignment Grading 
 
-[Site Build](/sitebuild.md)
+[Site Build](assignments/sitebuild.md)
 
-[Visualization Blogs](/viz_dump.md)
+[Visualization Blogs](assignments/viz_dump.md)
 
-[Short Form Blogs](/short_blogs.md)
+[Short Form Blogs](assignments/short_blogs.md)
 
-[Blog Compilation](/blog_compilation.md) 
+[Blog Compilation](assignments/blog_compilation.md) 
 
-[Peer Review Expectations](/peer_review.md)
+[Peer Review Expectations](assignments/peer_review.md)
 
-[Class Participation](/participation.md) 
+[Class Participation](assignments/participation.md) 
 
 ## Assigment Due Dates 
 
