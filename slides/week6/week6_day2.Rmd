@@ -130,6 +130,8 @@ sqrt((x * (1-x))/n)
   # here: sqrt of [x*(1-x)]/n where n is going to be a vector of sample sizes 
 }
 
+std.error.prop(x = il_gov_poll$pct, n = il_gov_poll$sample_size)
+
 # let's try that again with the upper and lower bounds calculation 
 
 CIbound <- function(x, y, level, upper = c("TRUE", "FALSE")){
@@ -174,7 +176,7 @@ il_gov_poll %>%
   geom_errorbar(
     aes(ymin = lower_bound_95*100, 
         ymax = upper_bound_95*100), 
-                    width = 2
+                    width = 1
     )+
   geom_line()+
   
@@ -183,7 +185,7 @@ il_gov_poll %>%
   # new scale set up because we are dealing with dates 
   scale_x_date(date_breaks = "1 month", 
                date_minor_breaks = "1 week",
-               date_labels = "%b", 
+               date_labels = "%b", , 
                limits = as.Date(c("2022-06-01", "2022-11-01"))) + 
   
   #changing the colors 
@@ -435,17 +437,22 @@ knitr::include_graphics("americas_raincloud.png")
 ```{r vdem, eval = F, include = F, warning=FALSE}
 
 # install devtools, then use that to install the vdem data
-# install.packages("devtools")
-# devtools::install_github("vdeminstitute/vdemdata")
+#install.packages("devtools")
+#devtools::install_github("vdeminstitute/vdemdata")
 
 library(vdemdata)
+vdem <- vdem_data
 
 # codebook : https://www.v-dem.net/static/website/img/refs/codebookv111.pdf
 
 summary(vdem$v2peapsgeo_osp)
 
+library(ggdist)
+dim(vdem)
+
 vdem %>% 
   filter(e_regiongeo == c(10:14), year > 2000) %>% 
+  
   ggplot(aes(y = as_factor(e_regiongeo), x = v2peapsgeo_osp, 
              fill = as_factor(e_regiongeo))) +
   stat_halfeye(
