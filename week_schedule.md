@@ -197,12 +197,12 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 **Short Form Blog 2 Due 11/14 at 11:59** 
 
-### Tuesday, 11/15: Big Data, Missing Data, and Other Miscellaneous Problems 
+### Tuesday, 11/15: Interactive Visualizations in R  
    
 
 ### Thursday, 11/17: Lab Session 9 
 
-- Interactive visualizations 
+- Interactive visualizations, pt. 2
 
 ---- 
 
@@ -212,7 +212,7 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
 ### Tuesday, 11/22: 
 
-- Review of Final Assignments 
+- Review of Final Assignments and Final Working Group 
 
 ### Thursday, 11/24: **No Class for Thanksgiving Holiday** 
 
