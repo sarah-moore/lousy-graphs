@@ -1,0 +1,22 @@
+---
+title: "Course Bibliography: Packages"
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output: pdf_document
+bibliography: [packages.bib]
+nocite: "@*"
+---
+
+```{r setup, include=FALSE}
+library(rcrossref)
+
+knitr::write_bib(c("devtools", "base", "zoo", "tidyverse", "knitr",
+                   "rmarkdown", "tidyverse", "reshape2", "fauxnaif",
+                   "gganimate", "ggthemes", "stringr", "gridExtra", "gifski", 
+                   "png", "ggrepel", "scales", "lubridate", "paletteer",
+                   "GGally", "systemfonts", "extrafont", "colorspace",
+                   "ggdist", "vdemdata"), 
+                 width = 60, 
+                 file = "packages.bib")
+
+```

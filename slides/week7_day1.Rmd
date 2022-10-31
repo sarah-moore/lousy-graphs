@@ -1,0 +1,16 @@
+---
+title: "Geographic and Demographic Data"
+author: "Sarah Moore"
+date: "`r Sys.Date()`"
+output:  
+  beamer_presentation:
+    theme: "Berlin"
+    colortheme: "crane"
+urlcolor: "blue"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
