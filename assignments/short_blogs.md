@@ -24,5 +24,32 @@ You do not need to make extensive reference to political science academic work u
 
 ---
 
-# Blog 2: 
+# Blog 2: Many ways to see it 
+
+Here you will explore the relationship between two variables housed in the V-Dem dataset. As we talked about in class, this dataset is available when you install and load in the package `vdemdata` in R. You'll specifically want to look at the dataset called `vdem` If you'd like some help to access this package, the [GitHub repo for the package and dataset](https://github.com/vdeminstitute/vdemdata) are probably the best place to start. The codebook for this dataset is [here](https://www.v-dem.net/static/website/img/refs/codebookv111.pdf). 
+
+For this short form blog **I'd like you to look at just TWO variables and their relationship.** You may also include **contextual variables** such as country, region, and year; however, other substantive variables should be avoided. You will explore the nature of the relationship between these two variables (and potential variation over contextual variables), over **4 different visualizations.** This means that you should produce four different specifications of how to look at the variables together, and potentially their association across time and space. **You must use at least three different `geom_` functions** in this blog, to mean you can't just turn in 4 variations of a line or bar graph. A portion of the grade on these visualizations will be determined **based on your ability to make these visualizations "yours",** in the sense that you are continuing to explore the types of themes and aesthetic details that you feel embody design by YOU.  
+
+Because V-Dem gather their data via expert surveys, they use measurement models to aggregate these measures over distinct sources. Therefore, the direct variable that you choose to work with might be a bit confusing to interpret relative to the original scale that was used to measure it. For this reason, you may also opt to use the variable name with `_osp` appended to it, so that you can translate your results via the original measurement scale. If you would prefer to defer to the primary variable with the changed measurement and would like to discuss what this means for interpretation, feel free to talk with me. 
+
+Regarding the textual part of this assignment, you should plan to write a max of about 500 words. If you use less in a meaningful way that is fine, so long as you achieve the following:
+
+Use your wordspace to **describe the variables** that you are looking at, including how they were measured and any way that you might have changed the measurement along the way. The remainder of your text should be used to put into words **how you would describe the relationship and potential implications for the type of relationship that exists** between your choice of variables. These do not have to be academic observations necessarily, but something that might interesting to explore down the line based on the relationship you find. Furthermore, you might choose to subset these variables based on a tim period, country or region, or group of countries that we might group together in some way (example, the G20). If you do so, please try to **characterize this choice and what leverage we might gain from looking at just these observations.**
+
+If you have any news or academic sources please cite them in text, via a hyperlink. To cite the packages that you use to develop the blog, please consult the folder in the GitHub repo for the class titled "bib-example" where you can see how to develop a quick bibliography of all the packages that we are now using. *Append your bibliography in some way to your entire site OR include at the end of your text.* We will go over this in class on Tuesday, Nov. 8 for clarity. 
+
+## Grading Criteria: 
+
+1) The blog includes 4+ visualizations that implement at least 3 different geom functions to produce them. (+8)
+
+2) The author makes reasonable effort to provide accurate descriptions of the relationship between the variables that they are exploring.  (+3)
+
+3) The author has used visual and aesthetic elements apart from default ggplot design. The author has manipulated some of the following elements to explore the features that they like to bring out in design: text, colors, background, whitespace. 
+
+4) The blog cites the packages used and includes relevant hyperlinks to other sources, as appropriate (+1). 
+
+
+ 
+
+
 
