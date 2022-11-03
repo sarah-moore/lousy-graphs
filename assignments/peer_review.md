@@ -1,7 +1,7 @@
 # Expectations for Peer Review
 
 ## General Norms for Engaging in the Peer Review Process 
-1. Be kind and thoughtful. You are providing a responses that is supposed to help *improve* your peer's work, not *belittle* it. 
+1. Be kind and thoughtful. You are providing a responses that are supposed to help *improve* your peer's work, not *belittle* it. 
 
 2. A full critique evaluates the *good* too. Always ensure that you are providing commentary on the well-executed elements of your peer's work too.
 
