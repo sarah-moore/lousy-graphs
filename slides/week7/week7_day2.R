@@ -1,7 +1,15 @@
 # WEEK 7, DAY 2 
 # Putting things all together 
-
+# DATA TODAY FROM: “Armed Conflict Location & Event Data Project (ACLED); www.acleddata.com.
 # load in all the packages that we probably want
+
+#install.packages(c("tidyverse", "reshape2", "fauxnaif", "gganimate", "ggthemes",
+#"stringr", "gridExtra", "gifski", "png", "ggrepel", "scales",
+#"lubridate", "paletteer", "GGally", "systemfonts", "extrafont",
+#"colorspace", "sf", "rnaturalearth", "ggmap",
+#"rnaturalearthdata", "paletteer", "stringr", "haven", "sp"))
+
+
 packages <- c("tidyverse", "reshape2", "fauxnaif", "gganimate", "ggthemes",
               "stringr", "gridExtra", "gifski", "png", "ggrepel", "scales",
               "lubridate", "paletteer", "GGally", "systemfonts", "extrafont",
