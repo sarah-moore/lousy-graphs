@@ -2,7 +2,7 @@
 
 [PDF syllabus](POLISCI390_syllabus.pdf)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sarah-moore/lousy-graphs/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sarah-moore/lousy-graphs/HEAD?urlpath=rstudio)
 
 ## Fall 2022, Instructor: Sarah Moore 
 
