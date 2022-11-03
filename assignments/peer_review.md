@@ -11,13 +11,21 @@
 
 5. Your commentary may be most helpful if you include some suggestions or examples of *how* your peer might improve their work. You are encouraged to provide these suggestions, with the respect that your peer does *not* have to incorporate them if they disagree or feel the changes are not incorporable. 
 
-## Requirements for Peer Relationship 
+## Requirements for Peer Review 
 
-- Partners will be assigned by the second class session, during which time partners will meet and set an agreed upon means of communication. 
-- Partners should communicate outside of class to document their expectations regarding: 
-  - Communication Boundaries 
-  - Expected Work Sharing-- How far in advance do you want to share drafts with one another? What is the expected turnaround? 
-  - Modification to Criteria 
-  - Assessment of relative strength that may particularly guide commentary (e.g. relative experience in R, desire to work on public writing, etc.)  
+- Meet twice about the final blog compilation.
 
-## Peer Assessment Criteria 
+  1) The first meeting should be to introduce each other to your work, what you struggled with, what you would like feedback on, and set a deadline for feedback and for the second meeting. This can likely be during the last Tuesday class.
+  
+  2) The second meeting (in-person or over Zoom), should be an opportunity for you to deliver the feedback requested in the first meeting. This should be a rundown of any elements that you felt needed reasonable improvement before submission. You can also choose to provide each other with the feedback before this meeting and then ask clarifying questions and gauge the reception of the changes you might have made since receiving the feedback. 
+  
+- Provide each other with written documentation of feedback. This feedback should ALSO include good things. Break things up by elements, example: 
+  - General Comments: 
+  - Viz Blog 1: 
+  - Short Form Blog 1: 
+    
+  ... and so on. 
+
+- The peer review relationship should also build off each others' strengths. If you offer an idea for making something better or more interesting, you are welcome to work together to show each other how to implement these changes technically. 
+
+So long as you fulfill these requirements and turn in the feedback that you provided to your peer, you will receive full credit for this portion of the participation grade! 
