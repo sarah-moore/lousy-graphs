@@ -4,7 +4,7 @@
 # https://www.v-dem.net/documents/1/codebookv12.pdf
 
 # Week 8, Day 1: Interactive Visualizations 
-install.packages(c("plotly", "ggridges"))
+# install.packages(c("plotly", "ggridges"))
 packages <- c("tidyverse", "reshape2", "fauxnaif", "gganimate", "ggthemes",
               "stringr", "gridExtra", "gifski", "png", "ggrepel", "scales",
               "lubridate", "paletteer", "GGally", "systemfonts", "extrafont",
@@ -219,6 +219,80 @@ recent_vdem %>%
 
 ggplotly(gender_regime)-> gender_plotly
 
+
+# see here: 
+# https://rstudio-pubs-static.s3.amazonaws.com/379188_3a2e3e316c604840a53c73151713d7a7.html
+# https://pokgak.xyz/citf-graphs/
+
 # install.packages("htmlwidgets")
 library(htmlwidgets)
 saveWidget(gender_plotly, "data/gender_regime.html", selfcontained = F, libdir = "lib")
+
+
+### NOW INTERACTIVE MAPS 
+# https://ladal.edu.au/motion.html#3_Interactive_Maps 
+# https://rstudio.github.io/leaflet/map_widget.html
+
+#install.packages("leaflet")
+library(leaflet)
+
+chicago <- leaflet() %>% 
+  addTiles() %>% 
+  setView(lng = -87.6298 , lat = 41.8781, zoom = 10)
+
+chicago # a nice map of chicago 
+
+
+# back to brazil voting data
+ 
+brazil_states <-st_read("~/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/data/brazilshape/bra_admbnda_adm1_ibge_2020.shp")
+
+brazil_mun <-st_read("~/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/data/brazilshape/bra_admbnda_adm2_ibge_2020.shp")
+
+mg_mun_data <- read_csv2("~/Library/CloudStorage/OneDrive-NorthwesternUniversity/Teaching_RA/2022_Fall_DataViz/lousy-graphs/data/votacao_2018_MG.csv",
+                         locale = readr::locale(encoding = "latin1"))
+
+names(mg_mun_data) <- tolower(names(mg_mun_data))
+brazil_mun %>%
+  filter(ADM1_PT == "Minas Gerais") -> mg_shape
+names(mg_shape)<- tolower(names(mg_shape))
+
+mg_shape$adm2_pt<- toupper(mg_shape$adm2_pt)
+
+mg_mun_data %>%
+  filter(ds_cargo == "Governador", nr_turno == 1) %>%
+  group_by(nm_municipio, nm_partido) %>%
+  summarize(sum_votes = qt_votos_nominais) %>%
+  group_by(nm_municipio) %>%
+  mutate(proportion_votes =
+           sum_votes / sum(sum_votes, na.rm = T)) %>%
+  group_by(nm_municipio) %>%
+  mutate(vote_win =
+           if_else(proportion_votes == max(proportion_votes, na.rm = T),
+                   1, 0)) -> mg_data_first
+
+voting_shape_mg <- inner_join(mg_shape, mg_data_first,
+                                    by = c("adm2_pt"="nm_municipio"))
+
+
+
+voting_shape_mg$popUp <-
+  paste0(
+    "<strong>",voting_shape_mg$adm2_pt,"</strong><br>", "First Round Winner: ", voting_shape_mg$nm_partido
+    
+  )
+
+voting_shape_mg %>% 
+  filter(vote_win == 1) %>%
+  leaflet() %>%
+  addTiles() %>%
+  setView(lat = -17.9302, lng= -43.7908, zoom =6) %>%
+  addPolygons(
+    fillColor = ~ nm_partido,
+    fillOpacity = 0.35,
+    color = "white",
+    weight = 1, 
+    popup = ~ popUp
+  )
+
+
