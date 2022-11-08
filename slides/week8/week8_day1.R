@@ -2,6 +2,7 @@
 # https://plotly-r.com/overview.html
 # codebook: 
 # https://www.v-dem.net/documents/1/codebookv12.pdf
+# https://plotly.com/r/hover-text-and-formatting/ 
 
 # Week 8, Day 1: Interactive Visualizations 
 # install.packages(c("plotly", "ggridges"))

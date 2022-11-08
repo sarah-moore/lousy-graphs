@@ -122,13 +122,13 @@ inner_join(continent_asia, acled_asia,
 
 # let's make a plot of the number of contentious political events for 2020 
 
-#acled_mapping %>% 
-#  filter() %>%
-#  group_by(geounit) %>%
-#  count() %>% 
-#  ggplot(aes()) + 
-#  geom_sf() + 
-#  # now dress it up 
+acled_mapping %>% 
+  filter(year == 2020) %>%
+  group_by(geounit) %>%
+  count() %>% 
+  ggplot(aes(fill = n)) + 
+  geom_sf() 
+  # now dress it up 
 
 
 
@@ -138,40 +138,49 @@ inner_join(continent_asia, acled_asia,
 
 # since I gave a lot of this start up code above, you should do this one from scratch 
 
+acled_mapping %>% 
+    mutate(fatalities_bin = if_else(fatalities >= 1, 1, 0)) %>%
+    group_by(geounit) %>%
+    summarize(sum_events = n(),
+           ratio_fatal = sum(fatalities_bin)/n())-> acled_asia_fatal_map
 
+acled_asia_fatal_map %>% 
+  ggplot(aes(fill = ratio_fatal)) + 
+  geom_sf() 
 
 # now see what the most likely type of contentious political event is for each country 
+acled_mapping %>% 
+  group_by(geounit) %>% 
+  count() -> acled_map_count
 
-#acled_mapping %>% 
-#  group_by() %>% 
-#  count() -> acled_map_count
+acled_map_count <- cbind(acled_map_count, st_coordinates(st_centroid(acled_map_count$geometry)))
 
-#acled_map_count <- cbind(acled_map_count, st_coordinates(st_centroid(acled_map_count$geometry)))
-
-#acled_map_count %>%
-#  group_by() %>% 
-#  mutate(most_likely = 
-#           if_else(
-#                   )) %>% 
-#  filter() %>%
-#  ggplot(aes(fill = )) + 
-#  geom_sf(alpha = 0.85) + 
-#  geom_label(#add geounit labels,
-#    aes(x = X,
-#        y = Y,
-#        label = geounit),
-#    fill = "white",
-#    alpha = 0.25,
-#    family ="Georgia", #change the font
-#    size = 3.4,
-#    hjust = 0
-#  ) + 
-#  scale_fill_paletteer_d("nationalparkcolors::Hawaii", name = "Event Type") +
-#  theme(
-#    panel.background = element_blank(), 
-#    axis.ticks = element_blank(), 
-#    axis.text = element_blank()
-#  ) + 
-#  labs(x = "", y = "")
+acled_map_count %>%
+  group_by(geounit) %>% 
+  mutate(most_likely = 
+           if_else(acled_map_count$n == max(acled_map_count$n), 
+                   1,
+                   0
+                   )) %>% 
+  filter() %>%
+  ggplot(aes(fill = )) + 
+  geom_sf(alpha = 0.85) + 
+  geom_label(#add geounit labels,
+    aes(x = X,
+        y = Y,
+        label = geounit),
+    fill = "white",
+    alpha = 0.25,
+    family ="Georgia", #change the font
+    size = 3.4,
+    hjust = 0
+  ) + 
+  scale_fill_paletteer_d("nationalparkcolors::Hawaii", name = "Event Type") +
+  theme(
+    panel.background = element_blank(), 
+    axis.ticks = element_blank(), 
+    axis.text = element_blank()
+  ) + 
+  labs(x = "", y = "")
 
 
