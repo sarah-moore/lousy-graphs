@@ -10,7 +10,7 @@ packages <- c("tidyverse", "reshape2", "fauxnaif", "gganimate", "ggthemes",
               "stringr", "gridExtra", "gifski", "png", "ggrepel", "scales",
               "lubridate", "paletteer", "GGally", "systemfonts", "extrafont",
               "colorspace", "sf", "rnaturalearth", "ggmap",
-              "rnaturalearthdata", "paletteer", "srtingr", "haven")
+              "rnaturalearthdata", "paletteer", "stringr", "haven")
 
 lapply(packages, require, character.only = TRUE)
 
