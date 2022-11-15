@@ -2,18 +2,20 @@
 title: "Course Bibliography"
 author: "Sarah Moore"
 date: "`r Sys.Date()`"
-output: html_document
+output: pdf_document
 bibliography: packages.bib
 nocite: '@*'
 ---
 
 ```{r setup, include=FALSE, eval = F}
+install.packages(c("knitr", "rcrossref"))
+library(vdem)
 library(knitr)
-library(rcrossref)
+library(extraF)
 
-knitr::write_bib(c("devtools", "base", "zoo", "tidyverse", "bookdown", "knitr",
-                   "rmarkdown"), width = 60, 
-                 file = "/Users/sarahmoore/Desktop/packages.bib")
+knitr::write_bib(c("plotly", "extrafont", "tidyverse","dplyr"), 
+                 width = 60, 
+                 file = "packages.bib")
 ```
 
 This information comes from ["Creating A Bibliography with rcrossref"](https://www.pauloldham.net/creating-a-bibliography-with-rcrossref/) by Paul Oldham, where there are a bunch of other tutorials useful for citations with and for R! 
