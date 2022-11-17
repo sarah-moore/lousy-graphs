@@ -94,20 +94,60 @@ ggplot(df_bigfoot_terms, aes(label = term, size = total_freq, color = term)) +
 
 # what's an alternative? figure out how to implement the interactive + qual!
 library(leaflet)
+library(htmltools)
+library(htmlwidgets)
+
 bigfoot$new_date <- format(as.Date(bigfoot$date), "%D")
 
-install.packages("leafletCN")
+tag.map.title <- tags$style(HTML("
+  .leaflet-control.map-title { 
+    transform: translate(-50%,20%);
+    position: fixed !important;
+    left: 30%;
+    text-align: left;
+    padding-left: 5px; 
+    padding-right: 5px; 
+    background: rgba(255,255,255,0.75);
+    font-size: 16px;
+  }
+"))
+tag.map.caption <- tags$style(HTML("
+  .leaflet-control.map-caption { 
+    transform: translate(-50%,20%);
+    position: fixed !important;
+    left: 30%;
+    text-align: left;
+    padding-left: 5px; 
+    padding-right: 5px; 
+    background: rgba(255,255,255,0.75);
+    font-size: 8px;
+  }
+"))
+
+title <- tags$div(
+  tag.map.title, HTML("Bigfoot Sightings Across the U.S., 2000-2021")
+)  
+
+caption <- tags$div(
+  tag.map.caption, HTML("Data Source: Bigfoot Field Researchers Organization (BFRO) and <a href='https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-09-13'>this tidytuesday post</a>")
+)  
+
+
+ 
 
 bigfoot %>%
   filter(year(date)>=2000) %>%
   leaflet() %>%
   setView(-103.4617, 44.58, zoom = 4) %>%
   addTiles() %>%
-  addMarkers(~longitude, ~latitude, popup = ~paste("<b>Date:</b>", new_date, "<br>", "<b>Report</b>:", observed), 
-             clusterOptions = markerClusterOptions()) 
-  
+  addMarkers(~longitude, ~latitude, 
+             popup = ~paste("<style> div.leaflet-popup-content {width:500px !important;}</style> <b>Date:</b>", new_date, "<br>", 
+                            "<b>Report</b>:", observed), 
+             clusterOptions = markerClusterOptions()) %>%
+  addControl(title, position = "topleft", className="map-title") %>%
+  addControl(caption, position = "bottomleft", className = "caption")->sightings_map
 
-library(htmlwidgets)
-saveWidget(sightings_map, file = "exercises/sightings_map.html", 
-           knitrOptions = c(fig.width = 6), 
+
+saveWidget(sightings_map, file = "exercises/bigfoot_sightings.html", 
+           knitrOptions = c(fig.width = 10), 
            title = "Bigfoot Sightings Across the U.S., 2000-2021")
