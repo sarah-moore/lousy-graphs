@@ -5,8 +5,6 @@ packages <- c("tidyverse", "reshape2", "fauxnaif", "gganimate", "ggthemes",
 lapply(packages, require, character.only = TRUE)
 loadfonts(device = "all")
 
-paletteer_d(`"peRReo::rosalia"`)
-
 bigfoot <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-13/bigfoot.csv")
 ############################
 

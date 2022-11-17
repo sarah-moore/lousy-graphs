@@ -1,0 +1,20 @@
+---
+title: "Bigfoot Sightings Across the U.S., 2000-2021"
+author: "Sarah Moore"
+output: html_document 
+---
+``` {r, setup, include = F, eval = T}
+packages <- c("tidyverse", "reshape2", "fauxnaif", "gganimate", "ggthemes",
+              "stringr", "gridExtra", "gifski", "png", "ggrepel", "scales",
+              "lubridate", "paletteer", "GGally", "systemfonts", "extrafont",
+              "colorspace", "sf", "rnaturalearth", "ggmap",
+              "rnaturalearthdata", "paletteer", "stringr", "haven",
+              "plotly", "ggridges")
+
+lapply(packages, require, character.only = TRUE)
+
+```
+
+```{r, out.height="100%", include = T, echo = F}
+knitr::include_url("sightings_map.html", height ="680px")
+```

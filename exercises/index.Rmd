@@ -28,12 +28,11 @@ These exercises will be ungraded opportunities for you to continue to build your
 
 [Animation!](gganimate_tutorial.R)
 
-And here I have embedded the animated visualization: 
 
 ![Here is an image on the reported sightings of Bigfoot in the US over time.](transition_plot.gif) 
 
 
-Here is an interactive plot created with the `plotly` package: 
+Here is a basic interactive plot created with the `plotly` package and data from VDem: 
 
 ```{r, include = T, eval=T, results = "asis"}
 library(vdemdata)
@@ -49,3 +48,5 @@ ggplotly(gender_regime)-> gender_plotly
 
 gender_plotly
 ```
+
+
