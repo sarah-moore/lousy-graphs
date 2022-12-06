@@ -132,7 +132,6 @@ caption <- tags$div(
   tag.map.caption, HTML("Data Source: Bigfoot Field Researchers Organization (BFRO) and <a href='https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-09-13'>this tidytuesday post</a>")
 )  
 
-
  
 
 bigfoot %>%
