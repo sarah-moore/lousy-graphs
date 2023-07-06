@@ -2,7 +2,6 @@
 
 [PDF syllabus](POLISCI390_syllabus.pdf)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sarah-moore/lousy-graphs/HEAD?urlpath=rstudio)
 
 ## Fall 2022, Instructor: Sarah Moore 
 
@@ -91,7 +90,6 @@ Not graded, but highly encouraged to stay up with the needs of the class.
 
 [Peer Review Expectations](assignments/peer_review.md)
 
-[Class Participation](assignments/participation.md) 
 
 ## Assigment Due Dates 
 
