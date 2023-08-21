@@ -185,7 +185,7 @@ of migration data visualizations"](https://journals.sagepub.com/doi/pdf/10.1177/
 
    - Scheller (2019) ["Our favorite Pew Research Center data visualizations of 2019"](https://www.pewresearch.org/fact-tank/2019/12/30/our-favorite-pew-research-center-data-visualizations-of-2019/) 
 
-- D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
+   - D'Ignazio and Klein (20-) ["Feminist Data Visualization"](https://dspace.ceid.org.tr/xmlui/bitstream/handle/1/955/Feminist_Data_Visualization.pdf)
 
 ### Thursday, 11/10: Lab Session 8 
 
