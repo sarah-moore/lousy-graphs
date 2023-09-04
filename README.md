@@ -1,4 +1,4 @@
-# Visualizing Political Data, AKA Sloppy Stats and Lousy Graphs 
+# Visualizing Political Data
 
 [PDF syllabus](POLISCI390_syllabus.pdf)
 
